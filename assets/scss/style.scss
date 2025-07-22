@@ -1,0 +1,23 @@
+@use "partials/about";
+
+
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap");
+
+*{
+    font-family: "Baskervville", serif;
+
+    h4{
+        color: #E3B6B1;
+    }
+
+    .h5{
+        font-size: 32px;
+        color: #725A58;
+    }
+
+    .h1-cap{
+        font-size: 40px;
+        color: #725A58;
+        font-weight: 400;
+    }
+}
