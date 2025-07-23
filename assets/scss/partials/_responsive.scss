@@ -1,0 +1,56 @@
+@media screen and (min-width: 360px) {
+    header {
+        .desktop-header {
+            display: flex;
+            position: sticky;
+            top: 0;
+
+            nav {
+                width: 100%;
+                padding: 3rem;
+
+                menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: #725A58;
+                            font-family: "Baskervville", serif;
+
+                            &:hover {
+                                text-decoration: underline 1px;
+                                text-underline-offset: 2px;
+                            }
+
+                        }
+                    }
+
+                    li:not(:last-child) {
+                        border-right: 1px solid #E3B6B1;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+
+            .logo {
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                    max-width: 80px;
+                    padding-top: 2rem;
+                }
+            }
+        }
+
+        .mobile-header {
+            display: none;
+        }
+    }
+}
