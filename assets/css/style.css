@@ -84,13 +84,8 @@ body .home-aboutMe .top-container .about-top-container .cl_logo {
   height: auto;
   max-width: 50px;
 }
-body .home-aboutMe .top-container .about-top-container .cl_logo .logo {
-  position: relative;
-  width: 100px;
-  height: 150px;
-}
-body .home-aboutMe .top-container .about-top-container .cl_logo .logo span.letter-c {
-  vertical-align: super;
+body .home-aboutMe .top-container .about-top-container .cl_logo img {
+  fill: #535353;
 }
 body .home-aboutMe .top-container .about-top-container h5 {
   font-size: 32px;

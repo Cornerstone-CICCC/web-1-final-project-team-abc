@@ -93,17 +93,9 @@ body{
                 height: auto;
                 max-width: 50px;
 
-                .logo{
-                    position: relative;
-                    width: 100px;
-                    height: 150px;
-
-                span.letter-c{
-                    vertical-align: super;
+                img{
+                fill: #535353;
                 }
-            }
-
-    
             }
             h5{
                 font-size: 32px;
@@ -118,6 +110,7 @@ body{
                     margin: 0;
                 }
             }
+            
             img.signiture_cb{
                 width:50%;
                 height: auto;
