@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 768px) {
     header {
         .desktop-header {
             display: flex;
@@ -31,9 +31,16 @@
                         }
                     }
 
+                    .home {
+                        a {
+                            text-decoration: underline 1px;
+                            text-underline-offset: 2px;
+                        }
+                    }
+
                     li:not(:last-child) {
                         border-right: 1px solid #E3B6B1;
-                        padding-right: 1rem;
+                        padding-right: 4rem;
                     }
                 }
             }

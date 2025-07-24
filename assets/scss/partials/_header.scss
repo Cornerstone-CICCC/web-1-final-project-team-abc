@@ -24,6 +24,19 @@ header {
 
                     left: 0;
                 }
+
+                &:checked~.open-menu {
+                    display: none;
+                }
+
+                &:checked~.close-menu {
+                    display: block;
+                }
+            }
+
+            .close-menu {
+                display: none;
+                font-size: 2rem;
             }
 
             img {
