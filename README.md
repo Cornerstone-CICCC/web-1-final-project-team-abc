@@ -33,6 +33,6 @@ Presentation will be on next Monday. Make sure you create a pull request to `mai
 
 Good luck! :)
 
-## Sass command
+## sass command
 
 `sass --watch assets/scss/style.scss assets/css/style.css`
