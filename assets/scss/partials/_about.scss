@@ -1,6 +1,20 @@
 @import url(href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 .aboutMe{
+
+    .title-container{
+        @media screen and (min-width: 1100px) {
+            .page-title{
+                font-size: 40px;
+            }
+
+            .h1-cap{
+                letter-spacing: 1.3px;
+                font-size: 65px;
+            }
+        }
+    }
+
     .about-description-card{
         background-color: #FAE9E7;
         display: flex;
@@ -29,12 +43,12 @@
                 }
             }
         }
-            @media screen and (min-width:800px) {
+            @media screen and (min-width:900px) {
             // display:grid ;
             // grid-template-columns: 1fr 2fr;
             display: flex;
             flex-direction: row;
-            padding: 5rem 7rem 3.5rem 7rem;
+            padding: 5rem 6rem 3.5rem 6rem;
             gap: 1rem;
 
             img{
@@ -50,12 +64,12 @@
                 }
 
                 p{
-                    font-family: "Lato", sans-serif;;
+                    font-family: "Lato", sans-serif;
                 }
                 .btn-aboutMe-container{
                     display: flex;
                     justify-content: start;
-                    margin: 0;
+                    margin: 2rem 0;
 
                     .btn-aboutMe{
                         display: flex;
@@ -68,25 +82,29 @@
 
     }
 
-    .brand-logo-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        margin: 1rem auto;
+    .brand-container{
+        margin-top: 1rem;
 
-        @media screen and (min-width:800px) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 3rem;
-        }
+        .brand-logo-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 1rem auto;
 
-        .logo-container{
-            display: flex;
-            align-items: center;
-            img{
-                opacity: 30%;
+            @media screen and (min-width:800px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 3rem;
+            }
+
+            .logo-container{
                 display: flex;
-                justify-content: center;
-                margin: 0.2rem auto;
+                align-items: center;
+                img{
+                    opacity: 30%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0.2rem auto;
+                }
             }
         }
     }
