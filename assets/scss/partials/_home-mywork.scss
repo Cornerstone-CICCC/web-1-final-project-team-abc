@@ -23,7 +23,7 @@
                 margin: 2rem;
                 color: rgba(114, 90, 88, 1);
 
-                @media  screen and (min-width:1100px){
+                @media  screen and (min-width:900px){
                     font-size: 80px;                  
                 }
     
@@ -45,7 +45,7 @@
                 font-weight: 400;
                 line-height: 1.6;
 
-                @media screen and (min-width:1100px){
+                @media screen and (min-width:900px){
                     margin: 0 auto;
                     width: 30%;
                     font-size: 18px;;
@@ -73,7 +73,7 @@
                 }
             }
 
-            @media screen and (min-width:1100px){
+            @media screen and (min-width:900px){
                 padding: 1rem 2.5rem;
                 a{
                     font-size: 18px;
@@ -96,7 +96,7 @@
             display: block;
         }
 
-        @media screen and (min-width:1100px){
+        @media screen and (min-width:900px){
             margin: 1rem 0;
             width: 100%;
             grid-template-columns: repeat(4, 1fr);
@@ -114,6 +114,11 @@
             line-height: 1.6;
             font-weight: 400;
             margin: 1rem 0.8rem;
+
+            @media screen and (min-width: 1000px) {
+                font-size: 32px;
+                padding: 0 15rem;
+            }
         }
 
         .review-btn-container{
@@ -128,7 +133,7 @@
             }
         }
 
-        @media screen and (min-width:1100px) {
+        @media screen and (min-width:900px) {
             margin: 2rem 8rem;        
         }
     }
@@ -157,7 +162,7 @@
                 margin: 2rem;
                 color: rgba(114, 90, 88, 1);
 
-                @media  screen and (min-width:1100px){
+                @media  screen and (min-width:900px){
                     font-size: 80px;                  
                 }
     
@@ -179,7 +184,7 @@
                 font-weight: 400;
                 line-height: 1.6;
 
-                @media screen and (min-width:1100px){
+                @media screen and (min-width:900px){
                     margin: 0 auto;
                     width: 30%;
                     font-size: 18px;;
@@ -207,7 +212,7 @@
                 }
             }
 
-            @media screen and (min-width:1100px){
+            @media screen and (min-width:900px){
                 padding: 1rem 2.5rem;
                 a{
                     font-size: 18px;
@@ -215,8 +220,27 @@
             }
         }
 
-        // images container
+        // images container not quite responsive...
         .makeup-and-hair-imgs{
+
+            .img-container-wedding::after{
+                    content:url("/assets/images/wedding_look-mobile.png");
+                    // content: "";
+                    // display: block;
+
+                    // width: 300px;
+                    // height: 400px;
+
+                    // background-image: url("/assets/images/wedding_look-mobile.png");
+                    // background-image: cover;
+                    // background-position: center;
+                    // background-repeat: no-repeat;
+                    // margin: 0 auto;
+
+                    @media screen and (min-width:1300px) {
+                        content: url("/assets/images/wedding_look.png");
+                    }
+                }
 
             .image-container{
                 position: relative;
@@ -226,7 +250,7 @@
                 margin: 2rem 3rem;
 
                 .make-up-hair-img{
-                    margin: 0 auto;
+                     margin: 0 auto;
                 }
 
                 .text-on-image{
@@ -242,7 +266,7 @@
                 }
             }
 
-            @media screen and (min-width:900px){
+            @media screen and (min-width:1200px){
                 margin: 2rem 4rem;
                 
                 .makeup-and-hair-img-container{
@@ -345,7 +369,7 @@
         color: #725A58;
         font-family:"Baskervville", serif;
 
-        @media screen and (min-width:1100px) {
+        @media screen and (min-width:900px) {
             background-color:rgba(248, 246, 244, 1);
         }
 
@@ -355,7 +379,7 @@
             align-items: center;
             background-color:#FAE9E7;
 
-            @media screen and (min-width:1100px) {
+            @media screen and (min-width:900px) {
             margin: 0 4rem;
             }
 
@@ -365,7 +389,7 @@
                 letter-spacing: 4px;
                 margin: 3rem 0;
 
-                @media screen and (min-width:1100px) {
+                @media screen and (min-width:900px) {
                     font-size: 80px;
                     
                 }
@@ -374,7 +398,7 @@
             .classes-card{
                 text-align: center;
 
-                @media screen and (min-width:1100px) {
+                @media screen and (min-width:900px) {
                     display: grid;
                     // width: 100%;
                     grid-template-columns: 5fr 4fr;
@@ -392,7 +416,7 @@
                     padding-top: 2rem;
                     margin: 0 2.2rem;
 
-                    @media screen and (min-width:1100px) {
+                    @media screen and (min-width:900px) {
                         margin: 0;
                         padding: 0;
                     }
@@ -403,7 +427,7 @@
                             background-color: rgba(185, 150, 146, 0.3);
                         }
 
-                        @media screen and (min-width:1100px) {
+                        @media screen and (min-width:900px) {
                             display: flex; 
                             align-items: center;
                             padding:1.5rem 0.8rem;
@@ -417,7 +441,7 @@
                             padding: 0 1.2rem;
                             text-align: center;
 
-                            @media screen and (min-width:1100px) {
+                            @media screen and (min-width:900px) {
                                 font-size: 30px;
                                 margin: 0;
                                 padding: 0 0.7rem ;
@@ -426,7 +450,7 @@
                             &.class-professionnal::after{
                                 content: "Professional 1-day Makeup workshop";
 
-                                @media screen and (min-width:1100px) {
+                                @media screen and (min-width:900px) {
                                     content: "Professional 1-day Workshop";
                                 }
                             }
@@ -438,7 +462,7 @@
                             padding: 0.5rem 1rem;
                             font-family:"Lato", sans-serif;
 
-                            @media screen and (min-width:1100px) {
+                            @media screen and (min-width:900px) {
                                 padding: 0.8rem 0 0 0.5rem;
                                 line-height: normal;
                                 width: 90%;
@@ -451,7 +475,7 @@
                             font-size: 22px;
                             visibility: visible;
 
-                            @media screen and (min-width:1100px) {
+                            @media screen and (min-width:900px) {
                                 .class-btn-text{
                                     visibility: hidden;
                                     font-size: 1px;
@@ -460,7 +484,7 @@
                             }
                         }
 
-                        @media screen and (min-width:1100px) {
+                        @media screen and (min-width:900px) {
                             justify-content: space-between;;
                             .class-title{
                                 display: flex;
@@ -486,7 +510,7 @@
                         color: #FBFAFA;
                     }
 
-                    @media screen and (min-width:1100px) {
+                    @media screen and (min-width:900px) {
                         padding: 1rem 2rem;
                         margin: 1rem;
                     }
@@ -496,7 +520,7 @@
                     margin: 3rem 0;
                     position: relative;
 
-                    @media screen and (min-width:1100px){
+                    @media screen and (min-width:900px){
                         margin: 0;
                         text-align: center;
                     }
@@ -505,7 +529,7 @@
                         width: 100%;
                         z-index: 0;
                         
-                        @media screen and (min-width:1100px) {
+                        @media screen and (min-width:900px) {
                             width: 80%;
                         }
 
@@ -519,7 +543,7 @@
                         left: 25px;
                         border: 1px solid #FBFAFA;
 
-                        @media screen and (min-width:1100px) {
+                        @media screen and (min-width:900px) {
                             top: 18px;
                             left: 13.5%;
                             width: 73%;

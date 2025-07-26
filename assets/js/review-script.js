@@ -58,4 +58,14 @@ function showReview(reviewId){
 
     reviewText.textContent = item.review;
     reviewerSigImg.src = item.reviewerSig_path;
+
 }
+
+function autoReviewSlide(){
+
+    showReview(currentItem)
+    currentItem = (currentItem +1)%reviews.length
+}
+autoReviewSlide()
+
+setInterval(autoReviewSlide,3000)
