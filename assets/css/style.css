@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .frame {
   background-color: #fce8e7;
   padding: 2rem 1rem;
@@ -75,7 +86,7 @@
 }
 
 .title {
-  background-color: #fefcfa;
+  background-color: #F8F6F4;
   text-align: center;
   padding: 3rem 1rem 2rem;
 }
@@ -146,7 +157,7 @@
   }
 }
 .footer {
-  background-color: #fefcfa;
+  background-color: #F8F6F4;
   text-align: center;
   padding: 40px 20px;
   color: #5c4033;
@@ -227,9 +238,11 @@
 header {
   background-color: #F8F6F4;
   width: 100%;
+  position: sticky;
 }
 header .desktop-header {
   display: none;
+  position: sticky;
 }
 header .mobile-header {
   position: sticky;
