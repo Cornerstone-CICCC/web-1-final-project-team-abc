@@ -1,0 +1,106 @@
+header {
+    background-color: #F8F6F4;
+    width: 100%;
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        position: sticky;
+        top: 0;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            padding: 1rem .5rem 1rem .5rem;
+
+            #burger-menu {
+                display: none;
+
+                &:checked~menu {
+
+                    left: 0;
+                }
+
+                &:checked~.open-menu {
+                    display: none;
+                }
+
+                &:checked~.close-menu {
+                    display: block;
+                }
+            }
+
+            .close-menu {
+                display: none;
+                font-size: 2rem;
+            }
+
+            img {
+                width: 100%;
+                max-width: 70px;
+            }
+
+            .instagram-icon {
+                a {
+                    color: #725A58;
+                    font-size: 2rem;
+                }
+            }
+
+            menu {
+                background-color: #F8F6F4;
+                position: absolute;
+                top: 6rem;
+                left: -100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: calc(100vh - 6rem);
+                width: 100vw;
+                transition: all .5s linear;
+
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #725A58;
+                        text-decoration: none;
+                        font-size: 32px;
+                        font-family: "Baskervville", serif;
+
+                        &:hover {
+                            text-decoration: underline 1px;
+                            text-underline-offset: 2px;
+                        }
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    gap: 23px;
+
+                    li {
+                        list-style: none;
+                        a {
+                            color: #725A58;
+                            text-decoration: none;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                p {
+                    font-family: "Lato", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -224,3 +224,138 @@
     font-size: 12px;
   }
 }
+header {
+  background-color: #F8F6F4;
+  width: 100%;
+}
+header .desktop-header {
+  display: none;
+}
+header .mobile-header {
+  position: sticky;
+  top: 0;
+}
+header .mobile-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+header .mobile-header nav #burger-menu {
+  display: none;
+}
+header .mobile-header nav #burger-menu:checked ~ menu {
+  left: 0;
+}
+header .mobile-header nav #burger-menu:checked ~ .open-menu {
+  display: none;
+}
+header .mobile-header nav #burger-menu:checked ~ .close-menu {
+  display: block;
+}
+header .mobile-header nav .close-menu {
+  display: none;
+  font-size: 2rem;
+}
+header .mobile-header nav img {
+  width: 100%;
+  max-width: 70px;
+}
+header .mobile-header nav .instagram-icon a {
+  color: #725A58;
+  font-size: 2rem;
+}
+header .mobile-header nav menu {
+  background-color: #F8F6F4;
+  position: absolute;
+  top: 6rem;
+  left: -100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 6rem);
+  width: 100vw;
+  transition: all 0.5s linear;
+}
+header .mobile-header nav menu li {
+  list-style: none;
+}
+header .mobile-header nav menu li a {
+  color: #725A58;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "Baskervville", serif;
+}
+header .mobile-header nav menu li a:hover {
+  text-decoration: underline 1px;
+  text-underline-offset: 2px;
+}
+header .mobile-header nav menu ul {
+  display: flex;
+  gap: 23px;
+}
+header .mobile-header nav menu ul li {
+  list-style: none;
+}
+header .mobile-header nav menu ul li a {
+  color: #725A58;
+  text-decoration: none;
+  font-size: 1rem;
+}
+header .mobile-header nav menu p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  header .desktop-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+  }
+  header .desktop-header nav {
+    width: 100%;
+    padding: 3rem;
+  }
+  header .desktop-header nav menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  header .desktop-header nav menu li {
+    list-style: none;
+  }
+  header .desktop-header nav menu li a {
+    text-decoration: none;
+    color: #725A58;
+    font-family: "Baskervville", serif;
+  }
+  header .desktop-header nav menu li a:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+  }
+  header .desktop-header nav menu .home a {
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+  }
+  header .desktop-header nav menu li:not(:last-child) {
+    border-right: 1px solid #E3B6B1;
+    padding-right: 4rem;
+  }
+  header .desktop-header .logo {
+    flex-shrink: 0;
+  }
+  header .desktop-header .logo img {
+    width: 100%;
+    max-width: 80px;
+    padding-top: 2rem;
+  }
+  header .mobile-header {
+    display: none;
+  }
+}

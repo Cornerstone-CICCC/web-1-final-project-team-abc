@@ -41,14 +41,14 @@
 
         a {
             text-decoration: none;
-            color: $brown;
+            color: variable.$brown;
             font-size: 16px;
             font-family: 'Baskervville', serif;
             position: relative;
             padding-bottom: 5px;
 
             &.active {
-                border-bottom: 1px solid $brown;
+                border-bottom: 1px solid variable.$brown;
             }
         }
     }
@@ -64,7 +64,7 @@
 
     .divider {
         border: none;
-        border-top: 1px solid $divider;
+        border-top: 1px solid variable.$divider;
         margin: 20px auto;
         max-width: 85%;
     }
