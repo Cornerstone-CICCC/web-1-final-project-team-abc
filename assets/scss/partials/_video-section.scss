@@ -3,6 +3,7 @@
 .video-section{
     background-color: rgba(248, 246, 244, 1);
     padding: 1rem;
+    font-family:"Baskervville", serif;
 
     .video-sec-container{
         display: flex;
@@ -87,6 +88,14 @@
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: 400;
+            }
+
+            &:hover{
+                a{
+                    border: none;
+                    background-color: #B99692;
+                    color: #FBFAFA;
+                }
             }
         }
 

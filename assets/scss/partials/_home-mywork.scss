@@ -226,9 +226,7 @@
                 margin: 2rem 3rem;
 
                 .make-up-hair-img{
-                    width: 90%;
                     margin: 0 auto;
-                    aspect-ratio: 10 / 13 ;
                 }
 
                 .text-on-image{
@@ -245,19 +243,18 @@
             }
 
             @media screen and (min-width:900px){
-                margin: 2rem 3rem;
-                // display: flex;
-                // flex-direction: row;
-                // justify-content: space-around;
+                margin: 2rem 4rem;
                 
                 .makeup-and-hair-img-container{
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     align-items: center;
-                    gap: 2rem;
+                    place-items: center;
+                    gap: 3rem;
 
                     .image-container:nth-child(1) {
                         order: 2;
+                        
                         .text-on-image{
                             left: 70px;
                             font-size: 55px;
@@ -265,13 +262,14 @@
                         .behind-border{
                             position: absolute;
                             border: 1px solid #E3B6B1;
-                            width: 90%;
-                            height: 95%;
+                            width: 100%;
+                            height: 100%;
                             top: -15px;
-                            left: 30px;
+                            left: 5%;
                             z-index: -10;
                         }
                     }
+                
                     .image-container:nth-child(2) {
                         order: 1;
                         padding:0 1rem;
@@ -281,14 +279,14 @@
                         }
 
                         &:hover{
-                            transform: scale(1.1);
+                            transform: scale(1.3);
                             .behind-border{
                                 position: absolute;
                                 border: 1px solid #E3B6B1;
-                                width: 80%;
+                                width: 90%;
                                 height: 100%;
                                 top: -15px;
-                                left: 40px;
+                                left: 10%;
                                 z-index: -10;
                             }
                         }
@@ -303,14 +301,14 @@
                         }
 
                         &:hover{
-                            transform: scale(1.1);
+                            transform: scale(1.3);
                             .behind-border{
                                 position: absolute;
                                 border: 1px solid #E3B6B1;
-                                width: 80%;
+                                width: 90%;
                                 height: 100%;
                                 top: -15px;
-                                left: 40px;
+                                left: 10% ;
                                 z-index: -10;
                             }
                         }
@@ -345,6 +343,7 @@
         padding: 2rem 0;
         background-color:#FAE9E7;
         color: #725A58;
+        font-family:"Baskervville", serif;
 
         @media screen and (min-width:1100px) {
             background-color:rgba(248, 246, 244, 1);
@@ -365,6 +364,11 @@
                 font-weight: 400;
                 letter-spacing: 4px;
                 margin: 3rem 0;
+
+                @media screen and (min-width:1100px) {
+                    font-size: 80px;
+                    
+                }
             }
 
             .classes-card{
@@ -379,7 +383,7 @@
                     text-align: start;
                     align-items: center;
 
-                    dev{
+                    div{
                         align-items: center;
                     }
                 }
@@ -484,7 +488,7 @@
 
                     @media screen and (min-width:1100px) {
                         padding: 1rem 2rem;
-                        margin: 0 1rem;
+                        margin: 1rem;
                     }
                 }
 
@@ -494,12 +498,17 @@
 
                     @media screen and (min-width:1100px){
                         margin: 0;
-                        // padding: ; to make img smaller
+                        text-align: center;
                     }
                                         
                     img{
                         width: 100%;
                         z-index: 0;
+                        
+                        @media screen and (min-width:1100px) {
+                            width: 80%;
+                        }
+
                     }
                     .inner-border{
                         position: absolute;
@@ -512,7 +521,9 @@
 
                         @media screen and (min-width:1100px) {
                             top: 18px;
-                            left: 17px;
+                            left: 13.5%;
+                            width: 73%;
+                            height: 92%;
                         }
 
                     }
