@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.frame {
+  background-color: #fce8e7;
+  padding: 2rem 1rem;
+}
+.frame .portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.frame .portfolio .portfolio-nav {
+  margin-bottom: 2rem;
+}
+.frame .portfolio .portfolio-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.frame .portfolio .portfolio-nav ul .tab {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Georgia", serif;
+  color: #aaa;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+.frame .portfolio .portfolio-nav ul .tab.active {
+  color: #3e3e3e;
+  font-weight: bold;
+}
+.frame .portfolio .portfolio-nav ul .tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a38d88;
+}
+.frame .portfolio .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.frame .portfolio .gallery.hidden {
+  display: none;
+}
+.frame .portfolio .gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+.frame .portfolio .cta-button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  border: 1px solid #755c56;
+  color: #755c56;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.frame .portfolio .cta-button:hover {
+  background-color: #f5e5e2;
+}
+
+.title {
+  background-color: #fefcfa;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+.title .my-work {
+  font-family: "Baskervville", serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  color: #6e4a44;
+  margin-bottom: 1rem;
+}
+.title .line {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 180px;
+  height: 2px;
+  background-color: #a38d88;
+}
+.title .text-wrapper {
+  font-family: "Avenir", sans-serif;
+  font-size: 1.2rem;
+  color: #3e3e3e;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .frame {
+    padding: 1rem;
+  }
+  .frame .portfolio .portfolio-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .frame .portfolio .portfolio-nav .tab {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+  }
+  .frame .portfolio .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .frame .portfolio .gallery img {
+    aspect-ratio: 1/1.2;
+    display: none;
+  }
+  .frame .portfolio .gallery img:nth-child(-n+4) {
+    display: block;
+  }
+  .frame .portfolio .cta-button {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  .title {
+    padding: 2.5rem 1rem 2rem;
+  }
+  .title .my-work {
+    font-size: 2.5rem;
+  }
+  .title .text-wrapper {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+.footer {
+  background-color: #fefcfa;
+  text-align: center;
+  padding: 40px 20px;
+  color: #5c4033;
+}
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.footer-title {
+  font-family: "Baskervville", serif;
+  font-size: 24px;
+  margin: 10px 0 5px;
+  color: #000;
+}
+.footer-subtitle {
+  font-size: 14px;
+  margin: 0;
+  color: #333;
+}
+.footer-icons {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.footer-icons i {
+  margin: 0 10px;
+  color: #5c4033;
+}
+.footer-nav {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: #5c4033;
+  font-size: 16px;
+  font-family: "Baskervville", serif;
+  position: relative;
+  padding-bottom: 5px;
+}
+.footer-nav a.active {
+  border-bottom: 1px solid #5c4033;
+}
+.footer-bottom p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  font-family: "Avenir", sans-serif;
+}
+.footer .divider {
+  border: none;
+  border-top: 1px solid #c7b7af;
+  margin: 20px auto;
+  max-width: 85%;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .footer-icons {
+    font-size: 18px;
+  }
+  .footer-icons i {
+    margin: 0 8px;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
