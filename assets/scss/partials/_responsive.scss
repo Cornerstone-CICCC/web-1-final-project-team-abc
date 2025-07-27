@@ -259,18 +259,20 @@
     header {
         .desktop-header {
             display: flex !important;
+            align-items: center;
             position: sticky;
             top: 0;
+            padding: 1rem;
+            gap: 1.5rem;
 
             nav {
                 width: 100%;
-                padding: 3rem;
+                // padding: 3rem;
 
                 menu {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    gap: 1rem;
+                    justify-content: center;
 
                     li {
                         list-style: none;
@@ -297,8 +299,13 @@
 
                     li:not(:last-child) {
                         border-right: 1px solid #E3B6B1;
-                        padding-right: 4rem;
+                        padding-right: 2rem;
                     }
+                    // test
+                    li:not(:first-child) {
+                        padding-left: 2rem;
+                    }
+
                 }
             }
 
@@ -318,6 +325,21 @@
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+     header {
+            nav {
+                width: 100%;
+                menu {
+
+                    li:not(:last-child) {
+                        border-right: 1px solid #E3B6B1;
+                        padding-right: 4rem;
+                    }
+                }
+            }
+        }
+    }
 
 // homepage
 @media screen and (min-width: 768px) {
