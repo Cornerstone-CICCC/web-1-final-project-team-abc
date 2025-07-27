@@ -1,0 +1,26 @@
+{
+    "sourceFile": "assets/scss/partials/_header.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1753495647084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753495717308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n header {\r\n-    background-color: #FBFAFA;\r\n+    // background-color: #FBFAFA;\r\n     width: 100%;\r\n     position: sticky;\r\n     top: 0;\r\n \r\n"
+                },
+                {
+                    "date": 1753601258351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,17 @@\n header {\r\n-    // background-color: #FBFAFA;\r\n+    background-color: rgba(248, 246, 244, 1);\r\n     width: 100%;\r\n     position: sticky;\r\n     top: 0;\r\n+    z-index: 100;\r\n \r\n     .desktop-header {\r\n         display: none;\r\n     }\r\n \r\n     .mobile-header {\r\n \r\n-\r\n         nav {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             align-items: center;\r\n"
+                }
+            ],
+            "date": 1753495647084,
+            "name": "Commit-0",
+            "content": "header {\r\n    background-color: #FBFAFA;\r\n    width: 100%;\r\n    position: sticky;\r\n    top: 0;\r\n\r\n    .desktop-header {\r\n        display: none;\r\n    }\r\n\r\n    .mobile-header {\r\n\r\n\r\n        nav {\r\n            display: flex;\r\n            justify-content: space-between;\r\n            align-items: center;\r\n            gap: 3rem;\r\n            padding: 1rem .5rem 1rem .5rem;\r\n\r\n            #burger-menu {\r\n                display: none;\r\n\r\n                &:checked~menu {\r\n\r\n                    left: 0;\r\n                }\r\n\r\n                &:checked~.open-menu {\r\n                    display: none;\r\n                }\r\n\r\n                &:checked~.close-menu {\r\n                    display: block;\r\n                }\r\n            }\r\n\r\n            .close-menu {\r\n                display: none;\r\n                font-size: 2rem;\r\n            }\r\n\r\n            img {\r\n                width: 100%;\r\n                max-width: 70px;\r\n            }\r\n\r\n            .instagram-icon {\r\n                a {\r\n                    color: #725A58;\r\n                    font-size: 2rem;\r\n                }\r\n            }\r\n\r\n            menu {\r\n                background-color: #F8F6F4;\r\n                position: absolute;\r\n                top: 6rem;\r\n                left: -100vw;\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-between;\r\n                align-items: center;\r\n                height: calc(100vh - 6rem);\r\n                width: 100vw;\r\n                transition: all .5s linear;\r\n\r\n\r\n                li {\r\n                    list-style: none;\r\n\r\n                    a {\r\n                        color: #725A58;\r\n                        text-decoration: none;\r\n                        font-size: 32px;\r\n                        font-family: \"Baskervville\", serif;\r\n\r\n                        &:hover {\r\n                            text-decoration: underline 1px;\r\n                            text-underline-offset: 2px;\r\n                        }\r\n                    }\r\n                }\r\n\r\n                ul {\r\n                    display: flex;\r\n                    gap: 23px;\r\n\r\n                    li {\r\n                        list-style: none;\r\n\r\n\r\n                        a {\r\n                            color: #725A58;\r\n                            text-decoration: none;\r\n                            font-size: 1rem;\r\n                        }\r\n                    }\r\n                }\r\n\r\n\r\n                p {\r\n                    font-family: \"Lato\", sans-serif;\r\n                    font-weight: 400;\r\n                    font-style: normal;\r\n                    font-size: 14px;\r\n                }\r\n\r\n            }\r\n        }\r\n\r\n    }\r\n\r\n\r\n\r\n}"
+        }
+    ]
+}

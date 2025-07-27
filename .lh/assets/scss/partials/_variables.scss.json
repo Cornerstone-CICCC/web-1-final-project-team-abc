@@ -1,0 +1,18 @@
+{
+    "sourceFile": "assets/scss/partials/_variables.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1753575342928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1753575342928,
+            "name": "Commit-0",
+            "content": "$brown: #5c4033;\r\n$divider: black;\r\n"
+        }
+    ]
+}
