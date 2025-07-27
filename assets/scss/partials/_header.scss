@@ -1,16 +1,15 @@
 header {
-    background-color: #F8F6F4;
+    background-color: rgba(248, 246, 244, 1);
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     .desktop-header {
         display: none;
-        position: sticky;
     }
 
     .mobile-header {
-        position: sticky;
-        top: 0;
-
         nav {
             display: flex;
             justify-content: space-between;
@@ -88,6 +87,7 @@ header {
 
                     li {
                         list-style: none;
+
                         a {
                             color: #725A58;
                             text-decoration: none;
@@ -95,13 +95,17 @@ header {
                         }
                     }
                 }
+
                 p {
                     font-family: "Lato", sans-serif;
                     font-weight: 400;
                     font-style: normal;
                     font-size: 14px;
                 }
+
             }
         }
+
     }
+
 }

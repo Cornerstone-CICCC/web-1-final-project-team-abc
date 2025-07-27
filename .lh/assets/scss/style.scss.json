@@ -1,0 +1,86 @@
+{
+    "sourceFile": "assets/scss/style.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1753144780134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753145167414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,23 @@\n-@use \"partials/about\";\n\\ No newline at end of file\n+@use \"partials/about\";\r\n+\r\n+\r\n+@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n+\r\n+*{\r\n+    font-family: \"Baskervville\", serif;\r\n+\r\n+    h4{\r\n+        color: variables.$pink;\r\n+    }\r\n+\r\n+    .h5{\r\n+        font-size: 32px;\r\n+        color: variables.$dark-brown;\r\n+    }\r\n+\r\n+    .h1-cap{\r\n+        font-size: 40px;\r\n+        color: variables.$dark-brown;\r\n+        font-weight: 400;\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753145543297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,18 +6,19 @@\n *{\r\n     font-family: \"Baskervville\", serif;\r\n \r\n     h4{\r\n-        color: variables.$pink;\r\n+        color: #E3B6B1;\r\n+;\r\n     }\r\n \r\n     .h5{\r\n         font-size: 32px;\r\n-        color: variables.$dark-brown;\r\n+        color: #725A58;\r\n     }\r\n \r\n     .h1-cap{\r\n         font-size: 40px;\r\n-        color: variables.$dark-brown;\r\n+        color: #725A58;\r\n         font-weight: 400;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753146470559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n     font-family: \"Baskervville\", serif;\r\n \r\n     h4{\r\n         color: #E3B6B1;\r\n-;\r\n     }\r\n \r\n     .h5{\r\n         font-size: 32px;\r\n"
+                },
+                {
+                    "date": 1753147813298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,1 @@\n-@use \"partials/about\";\r\n-\r\n-\r\n-@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n-\r\n-*{\r\n-    font-family: \"Baskervville\", serif;\r\n-\r\n-    h4{\r\n-        color: #E3B6B1;\r\n-    }\r\n-\r\n-    .h5{\r\n-        font-size: 32px;\r\n-        color: #725A58;\r\n-    }\r\n-\r\n-    .h1-cap{\r\n-        font-size: 40px;\r\n-        color: #725A58;\r\n-        font-weight: 400;\r\n-    }\r\n-}\n\\ No newline at end of file\n+@use \"partials/hero\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753230838898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@use \"partials/hero\";\n\\ No newline at end of file\n+@use \"/assets/scss/partials/home-mywork\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753233044015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@use \"/assets/scss/partials/home-mywork\"\n\\ No newline at end of file\n+@use \"partials/home-mywork\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753405614197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,6 @@\n-@use \"partials/home-mywork\";\n\\ No newline at end of file\n+@use \"partials/home-mywork\";\r\n+@use \"partials/video-section\";\r\n+\r\n+body{\r\n+    margin: 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753417508223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n-@use \"partials/home-mywork\";\r\n-@use \"partials/video-section\";\r\n+@use \"partials/hero\";\r\n \r\n body{\r\n     margin: 0;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753417870729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-@use \"partials/hero\";\r\n+@use \"partials/home-mywork\";\r\n+@use \"partials/video-section\";\r\n \r\n body{\r\n     margin: 0;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753485815851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,9 @@\n @use \"partials/home-mywork\";\r\n @use \"partials/video-section\";\r\n+@use \"partials/hero\";\r\n \r\n+@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\");\r\n+\r\n body{\r\n     margin: 0;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753485947798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+@use \"partials/home-mywork\";\r\n+@use \"partials/video-section\";\r\n+@use \"partials/hero\";\r\n+\r\n+\r\n+body{\r\n+    margin: 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753493010880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,25 @@\n-@use \"partials/home-mywork\";\r\n-@use \"partials/video-section\";\r\n-@use \"partials/hero\";\r\n \r\n+@use 'partials/footer';\r\n+@use \"partials/about\";\r\n \r\n-body{\r\n-    margin: 0;\r\n-}\n-@use \"partials/home-mywork\";\r\n-@use \"partials/video-section\";\r\n-@use \"partials/hero\";\r\n \r\n-@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\");\r\n+@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n \r\n-body{\r\n-    margin: 0;\r\n+*{\r\n+    font-family: \"Baskervville\", serif;\r\n+\r\n+    h4{\r\n+        color: #E3B6B1;\r\n+    }\r\n+\r\n+    .h5{\r\n+        font-size: 32px;\r\n+        color: #725A58;\r\n+    }\r\n+\r\n+    .h1-cap{\r\n+        font-size: 40px;\r\n+        color: #725A58;\r\n+        font-weight: 400;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753493878099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,5 @@\n-\r\n-@use 'partials/footer';\r\n-@use \"partials/about\";\r\n-\r\n-\r\n-@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n-\r\n-*{\r\n-    font-family: \"Baskervville\", serif;\r\n-\r\n-    h4{\r\n-        color: #E3B6B1;\r\n-    }\r\n-\r\n-    .h5{\r\n-        font-size: 32px;\r\n-        color: #725A58;\r\n-    }\r\n-\r\n-    .h1-cap{\r\n-        font-size: 40px;\r\n-        color: #725A58;\r\n-        font-weight: 400;\r\n-    }\r\n-}\n\\ No newline at end of file\n+@use 'partials/variables';\r\n+@use 'partials/portafolio';\r\n+@use 'partials/header';\r\n+@use 'partials/footer'\r\n+ \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753494370536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,25 @@\n+\r\n @use 'partials/variables';\r\n-@use 'partials/portafolio';\r\n-@use 'partials/header';\r\n-@use 'partials/footer'\r\n\\ No newline at end of file\n- \n+@use 'partials/footer';\r\n+\r\n+\r\n+@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n+\r\n+*{\r\n+    font-family: \"Baskervville\", serif;\r\n+\r\n+    h4{\r\n+        color: #E3B6B1;\r\n+    }\r\n+\r\n+    .h5{\r\n+        font-size: 32px;\r\n+        color: #725A58;\r\n+    }\r\n+\r\n+    .h1-cap{\r\n+        font-size: 40px;\r\n+        color: #725A58;\r\n+        font-weight: 400;\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753495392854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,13 @@\n-\r\n @use 'partials/variables';\r\n+@use './partials/header';\r\n+@use './partials/responsive';\r\n+@use './partials/main';\r\n @use 'partials/footer';\r\n \r\n+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');\r\n \r\n-@import url(\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap\");\r\n-\r\n-*{\r\n-    font-family: \"Baskervville\", serif;\r\n-\r\n-    h4{\r\n-        color: #E3B6B1;\r\n-    }\r\n-\r\n-    .h5{\r\n-        font-size: 32px;\r\n-        color: #725A58;\r\n-    }\r\n-\r\n-    .h1-cap{\r\n-        font-size: 40px;\r\n-        color: #725A58;\r\n-        font-weight: 400;\r\n-    }\r\n+* {\r\n+    box-sizing: border-box;\r\n+    margin: 0;\r\n+    padding: 0;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753575246858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,25 @@\n-@use 'partials/variables';\r\n-@use './partials/header';\r\n-@use './partials/responsive';\r\n-@use './partials/main';\r\n+\r\n @use 'partials/footer';\r\n+@use \"partials/about\";\r\n \r\n-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');\r\n \r\n-* {\r\n-    box-sizing: border-box;\r\n-    margin: 0;\r\n-    padding: 0;\r\n+@import url(href=\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\");\r\n+\r\n+*{\r\n+    font-family: \"Baskervville\", serif;\r\n+\r\n+    h4{\r\n+        color: #E3B6B1;\r\n+    }\r\n+\r\n+    .h5{\r\n+        font-size: 32px;\r\n+        color: #725A58;\r\n+    }\r\n+\r\n+    .h1-cap{\r\n+        font-size: 40px;\r\n+        color: #725A58;\r\n+        font-weight: 400;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753601371326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,16 @@\n \r\n @use 'partials/footer';\r\n @use \"partials/about\";\r\n+@use \"partials/header\";\r\n+@use './partials/responsive';\r\n \r\n-\r\n @import url(href=\"https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap\");\r\n \r\n *{\r\n+    box-sizing: border-box;\r\n+    margin: 0;\r\n+    padding: 0;\r\n     font-family: \"Baskervville\", serif;\r\n \r\n     h4{\r\n         color: #E3B6B1;\r\n"
+                }
+            ],
+            "date": 1753144780134,
+            "name": "Commit-0",
+            "content": "@use \"partials/about\";"
+        }
+    ]
+}
