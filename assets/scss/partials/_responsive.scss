@@ -1,0 +1,99 @@
+@media screen and (min-width: 768px) {
+    header {
+        .desktop-header {
+            display: flex;
+            position: sticky;
+            top: 0;
+
+            nav {
+                width: 100%;
+                padding: 3rem;
+
+                menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: #725A58;
+                            font-family: "Baskervville", serif;
+
+                            &:hover {
+                                text-decoration: underline 1px;
+                                text-underline-offset: 2px;
+                            }
+
+                        }
+                    }
+
+                    .active {
+                        a {
+                            text-decoration: underline 1px;
+                            text-underline-offset: 2px;
+                        }
+                    }
+
+                    li:not(:last-child) {
+                        border-right: 1px solid #E3B6B1;
+                        padding-right: 4rem;
+                    }
+                }
+            }
+
+            .logo {
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                    max-width: 80px;
+                    padding-top: 2rem;
+                }
+            }
+        }
+
+        .mobile-header {
+            display: none;
+        }
+    }
+
+    .contact-form {
+
+        h1 {
+            font-size: 80px;
+            max-width: 569px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 569px;
+            padding-bottom: 60px;
+        }
+
+        form {
+            max-width: 768px;
+            padding: 60px 80px 60px 80px;
+
+            .event-type {
+                .event-options {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            .date-time {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .submit-btn {
+                max-width: 160px;
+                align-self: center;
+            }
+        }
+    }
+}

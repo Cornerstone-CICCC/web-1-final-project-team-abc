@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+        <!-- Header -->
+        <header>
+            <div class="desktop-header">
+                <nav>
+                    <menu>
+                        <li class="home">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="work">
+                            <a href="#">My Work</a>
+                        </li>
+                        <li class="services">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="classes">
+                            <a href="#">Classes</a>
+                        </li>
+                    </menu>
+                </nav>
+                <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="BC Beauty Logo"></a></div>
+                <nav>
+                    <menu>
+                        <li class="tips">
+                            <a href="#">Beauty Tips</a>
+                        </li>
+                        <li class="about">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="contact">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="instagram">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </menu>
+                </nav>
+            </div>
+
+            <div class="mobile-header">
+                <nav>
+                    <input type="checkbox" id="burger-menu">
+                    <label for="burger-menu" class="open-menu"><i class="fa-solid fa-bars" style="color: #725a58; font-size: 2rem;"></i></label>
+                    <label for="burger-menu" class="close-menu"><i class="fa-solid fa-xmark" style="color: #725a58;"></i></label>
+
+                    <menu>
+                        <li class="home active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="work">
+                            <a href="#">My Work</a>
+                        </li>
+                        <li class="services">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="classes">
+                            <a href="#">Classes</a>
+                        </li>
+                        <li class="tips">
+                            <a href="#">Beauty Tips</a>
+                        </li>
+                        <li class="about">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="contact">
+                            <a href="#">Contact</a>
+                        </li>
+                        <div class="icons">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Expert Makeup and Hairstyle Studio</p>
+                    </menu>
+
+                    <div class="logo">
+                        <a href="#"><img src="./assets/images/logo.png" alt="BC Beauty Logo"></a>
+                    </div>
+                    <div class="instagram-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Form -->
+        <section class="contact-form">
+            <h1>LET'S TALK</h1>
+            <p>Check availability, pricing, and schedule a meeting for your special day or our academy services.</p>
+            <form action="https://formtester.goodbytes.be/post.php" method="POST" enctype="multipart/form-data">
+                <h5 class="services-title">Services</h5>
+                
+                <div class="event-type">
+                    <h5 class="form-title">Event Type</h5>
+                    <div class="event-options">
+                        <div class="wedding select">
+                            <input type="radio" value="wedding" name="event-type" id="wedding" checked>
+                            <label for="wedding"><span class="checkmark"></span>Wedding</label>
+                            
+                        </div>
+                        <div class="party">
+                            <input type="radio" value="party" name="event-type" id="party">
+                            <label for="party"><span class="checkmark"></span>Party</label>
+                            
+                        </div>
+                        <div class="photoshoot">
+                            <input type="radio" value="photoshoot" name="event-type" id="photoshoot">
+                            <label for="photoshoot"><span class="checkmark"></span>Photoshoot</label>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="date-time">
+                    <div class="event-date">
+                        <h5 class="form-title">Event Date</h5>
+                        <div class="date-selection">
+                            <label for="event-date"></label>
+                            <input type="date" name="event-date" id="event-date" placeholder="Select Date" required>
+                            <div class="not-decided-date">
+                                <input type="checkbox" id="not-decided-date">
+                                <label for="not-decided-date"> <span class="checkmark"></span>Not decided</label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-time">
+                        <h5 class="form-title">Event Time</h5>
+                        <div class="time-selection">
+                            <label for="event-time"></label>
+                            <select name="event-time" id="event-time">
+                                <option value="full-day">Full day</option>
+                                <option value="half-day">Half day</option>
+                            </select>
+                            <div class="not-decided-time">
+                                <input type="checkbox" id="not-decided-time">
+                                <label for="not-decided-time"><span class="checkmark"></span>Not decided</label>
+                                
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="name">
+                    <h5 class="form-title">Name</h5>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" required>
+                </div>
+                <div class="contact-field">
+                    <h5 class="form-title">Contact</h5>
+                    <div class="call-input">
+                        <input type="radio" value="call" name="contact-method" id="call" checked>
+                        <label for="call"><span class="checkmark"></span>Call</label>
+                        
+                    </div>
+                    <div class="input-field" id="checked">
+                        <select name="country-code" class="country-code">
+                            <option value="1">+1</option>
+                            <option value="886">+886</option>
+                            <option value="81">+81</option>
+                        </select>
+                        <label for="phone-number"></label>
+                        <input type="tel" id="phone-number" placeholder="Your mobile number" autocomplete="off">
+                    </div>
+                    <div class="whatsapp-input">
+                        <input type="radio" value="whatsapp" name="contact-method" id="whatsapp">
+                        <label for="whatsapp"><span class="checkmark"></span>WhatsApp</label>
+                        
+                    </div>
+                    <div class="input-field">
+                        <select name="country-code" class="country-code">
+                            <option value="1">+1</option>
+                            <option value="886">+886</option>
+                            <option value="81">+81</option>
+                        </select>
+                        <label for="whatsapp-number"></label>
+                        <input type="tel" id="whatsapp-number" placeholder="Your WhatsApp number" autocomplete="off">
+                    </div>
+                    <div class="sms-input">
+                        <input type="radio" value="sms" name="contact-method" id="sms">
+                        <label for="sms"><span class="checkmark"></span>SMS</label>
+                        
+                    </div>
+                    <div class="input-field">
+                        <select name="country-code" class="country-code">
+                            <option value="1">+1</option>
+                            <option value="886">+886</option>
+                            <option value="81">+81</option>
+                        </select>
+                        <label for="sms-number"></label>
+                        <input type="tel" id="sms-number" placeholder="Your SMS number" autocomplete="off">
+                    </div>
+                    <div class="email-input-field">
+                        <input type="radio" value="email" name="contact-method" id="email" autocomplete="off">
+                        <label for="email"><span class="checkmark"></span>Email</label>
+                        
+                    </div>
+                    <div class="input-field">
+                        <label for="email-input"></label>
+                        <input type="email" id="email-input" title="Only gmail accounts are allowed" pattern="^[a-zA-Z0-9_.+]+@gmail\.com$" placeholder="Your email address" autocomplete="off">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+            <img class="footer-logo" src="assets/images/logo.png" alt="Carla Beauty Logo" />
+            <h2 class="footer-title">Carla Beauty</h2>
+            <p class="footer-subtitle">Expert Makeup and Hairstyle Studio</p>
+            <div class="footer-icons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            </div>
+
+            <hr class="divider">
+
+            <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#" class="active">My Work</a>
+            <a href="#">Services</a>
+            <a href="#">Classes</a>
+            <a href="#">Beauty Tips</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            </nav>
+
+            <hr class="divider">
+
+            <div class="footer-bottom">
+            <p>Copyright 2024, Carla Beauty</p>
+            </div>
+        </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

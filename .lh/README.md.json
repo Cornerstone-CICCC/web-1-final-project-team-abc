@@ -1,0 +1,26 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1753148174562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753306734566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,4 +30,7 @@\n \r\n Presentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.\r\n \r\n Good luck! :)\r\n+\r\n+## Sass command\r\n+`sass --watch assets/scss/style.scss assets/css/style.css`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753484747486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,4 @@\n \r\n Presentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.\r\n \r\n Good luck! :)\r\n-\r\n-## sass command\r\n-\r\n-`sass --watch assets/scss/style.scss assets/css/style.css`\r\n"
+                }
+            ],
+            "date": 1753148174562,
+            "name": "Commit-0",
+            "content": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sbvT2vGZ)\r\n\r\n# Web 1 - Final Project (Team)\r\n\r\n**Goal:** Create a responsive Beauty website using the provided Figma mockup.\r\n\r\n## Instructions\r\n\r\n1. Clone the repository to your local machine.\r\n2. The team leader should create the GitHub project and invite their other members. Make sure to link the repository to the project.\r\n3. Using the provided Figma mockup, recreate this design using HTML, CSS, and JavaScript: [https://www.figma.com/design/hdmA1VIakgC2Yxt0xDDIyY/BC-Beauty---WMAD%2BUI%2FUXDesign?node-id=4106-556&t=NlOw72RJgvIYu6Cb-1]\r\n4. Make sure to create and assign tasks to each member on the GitHub Project. Discuss and agree on a plan on how you will work together.\r\n\r\n## Reminders\r\n\r\n- Create your branches. Do not work on the `main` branch.\r\n\r\n## Page Notes\r\n\r\n### Home\r\n\r\n- **MAKE UP 101**: `All Classes` button doesn't need to work.\r\n- **DIY Beauty Corner**: Clicking on the thumbnails should open a video in a modal popup. You can use any video from YouTube. On smaller screens, the thumbnails become a slider.\r\n- **LET'S TALK**: Clicking on the submit button should submit the form using JavaScript. Check out [EmailJS](https://www.emailjs.com/) on how to implement this.\r\n\r\n### Portfolio\r\n\r\n- **MY WORK**: You can switch between `Makeup` and `Hairstyle` by clicking on their tab names. You can use any effect you like (fade, slide, etc.). Clicking on the `View More` button doesn't do anything.\r\n\r\n## Presentation\r\n\r\nPresentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.\r\n\r\nGood luck! :)\r\n\r\n## sass command\r\n\r\n`sass --watch assets/scss/style.scss assets/css/style.css`\r\n"
+        }
+    ]
+}
