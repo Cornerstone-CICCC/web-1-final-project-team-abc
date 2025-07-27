@@ -1,14 +1,15 @@
 header {
-    background-color: #F8F6F4;
+    background-color: rgba(248, 246, 244, 1);
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     .desktop-header {
         display: none;
     }
 
     .mobile-header {
-        position: sticky;
-        top: 0;
 
         nav {
             display: flex;
