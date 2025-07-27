@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sbvT2vGZ)
+
 # Web 1 - Final Project (Team)
 
 **Goal:** Create a responsive Beauty website using the provided Figma mockup.
@@ -31,3 +32,7 @@
 Presentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.
 
 Good luck! :)
+
+## sass command
+
+`sass --watch assets/scss/style.scss assets/css/style.css`

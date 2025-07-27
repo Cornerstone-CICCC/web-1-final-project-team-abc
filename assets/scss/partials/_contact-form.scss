@@ -1,0 +1,645 @@
+.contact-form {
+    background-color:  rgba(248, 246, 244, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:6.5rem;
+
+    h1 {
+        color: #725A58;
+        font-size: 40px;
+        font-family: "Baskervville", serif;
+        letter-spacing: 3px;
+        font-weight: 400;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        padding-bottom: 40px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #FAE9E7;
+        padding: 1rem;
+
+
+        .services-title {
+            color: #000000;
+            font-family: "Baskervville", serif;
+            font-size: 32px;
+            font-weight: 400;
+            text-align: center;
+            border-bottom: 1px solid black;
+            padding-top: 2rem;
+            padding-bottom: .5rem;
+        }
+
+        .event-type {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 10px;
+
+            .form-title {
+                font-family: "Baskervville", serif;
+                font-size: 32px;
+                font-weight: 400;
+
+            }
+
+            .event-options {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .select {
+                    border: 1px solid #B99692;
+
+                }
+
+                .wedding {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: "Baskervville", serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding: .5rem;
+                    position: relative;
+                    background-color: #FBFAFA;
+
+                    #wedding {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~label .checkmark {
+                            background-image: url('../images/radio-checked.svg');
+                            background-repeat: no-repeat;
+
+                        }
+
+                        &:checked~label {
+                            color: #191919;
+                        }
+                    }
+
+                    label {
+                        width: 100%;
+                        color: #535353;
+
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: .5rem;
+                        right: .5rem;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+
+                .party {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: "Baskervville", serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding: .5rem;
+                    position: relative;
+                    background-color: #FBFAFA;
+
+                    .select {
+                        border: 1px solid #B99692;
+                        color: #191919;
+                    }
+
+                    label {
+                        width: 100%;
+                        color: #535353;
+
+                    }
+
+                    #party {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~label .checkmark {
+                            background-image: url('../images/radio-checked.svg');
+                            background-repeat: no-repeat;
+
+                        }
+
+                        &:checked~label {
+                            color: #191919;
+                        }
+
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: .5rem;
+                        right: .5rem;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+
+                .photoshoot {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: "Baskervville", serif;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding: .5rem;
+                    position: relative;
+                    background-color: #FBFAFA;
+
+                    .select {
+                        border: 1px solid #B99692;
+                        color: #191919;
+                    }
+
+                    label {
+                        width: 100%;
+                        color: #535353;
+
+                    }
+
+                    #photoshoot {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~label .checkmark {
+                            background-image: url('../images/radio-checked.svg');
+                            background-repeat: no-repeat;
+                        }
+
+                        &:checked~label {
+                            color: #191919;
+                        }
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: .5rem;
+                        right: .5rem;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+
+        .date-time {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .form-title {
+                font-family: "Baskervville", serif;
+                font-size: 32px;
+                font-weight: 400;
+
+            }
+
+            .date-selection {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                #event-date {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    border: 1px solid #B99692;
+                    width: 100%;
+                    position: relative;
+
+                    &::-webkit-calendar-picker-indicator {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: auto;
+                        height: auto;
+                        background: transparent;
+                        z-index: 1;
+                    }
+
+                    &::after {
+                        content: '';
+                        background-image: url('../images/date-selection.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: 0 0;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                    }
+                }
+
+
+
+                .not-decided-date {
+                    display: flex;
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding-left: 36px;
+                    position: relative;
+
+                    #not-decided-date {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~label .checkmark {
+                            background-image: url('../images/checkbox-checked.svg');
+                        }
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 22px;
+                        width: 22px;
+                        background-image: url('../images/checkbox.svg');
+                        background-repeat: no-repeat;
+
+                    }
+                }
+            }
+
+            .time-selection {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                #event-time {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    border: 1px solid #B99692;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    background-image: url('../images/down-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 12px center;
+
+                    option {
+                        font-family: "Lato", sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+
+                .not-decided-time {
+                    display: flex;
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding-left: 36px;
+                    position: relative;
+
+                    #not-decided-time {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+
+                        &:checked~label .checkmark {
+                            background-image: url('../images/checkbox-checked.svg');
+                        }
+                    }
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 22px;
+                        width: 22px;
+                        background-image: url('../images/checkbox.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .form-title {
+                font-family: "Baskervville", serif;
+                font-size: 32px;
+                font-weight: 400;
+
+            }
+
+            #name {
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 1rem;
+                border: 1px solid #B99692;
+
+            }
+        }
+
+        .contact-field {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .form-title {
+                font-family: "Baskervville", serif;
+                font-size: 32px;
+                font-weight: 400;
+
+            }
+
+            .call-input {
+                display: flex;
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                gap: 10px;
+                position: relative;
+
+                #call {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~label .checkmark {
+                        background-image: url('../images/radio-selected.svg');
+
+                    }
+                }
+
+                label {
+                    padding-left: 30px;
+                    width: 100%;
+
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                        height: 25px;
+                        width: 25px;
+                        background-image: url('../images/radio.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+
+
+
+            }
+
+
+            .whatsapp-input {
+                display: flex;
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                gap: 10px;
+                position: relative;
+
+                #whatsapp {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~label .checkmark {
+                        background-image: url('../images/radio-selected.svg');
+
+                    }
+                }
+
+                label {
+                    padding-left: 30px;
+                    width: 100%;
+
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                        height: 25px;
+                        width: 25px;
+                        background-image: url('../images/radio.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+
+            }
+
+
+            .sms-input {
+                display: flex;
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                gap: 10px;
+                position: relative;
+
+                #sms {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~label .checkmark {
+                        background-image: url('../images/radio-selected.svg');
+
+                    }
+                }
+
+                label {
+                    padding-left: 30px;
+                    width: 100%;
+
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                        height: 25px;
+                        width: 25px;
+                        background-image: url('../images/radio.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+
+            }
+
+            .email-input-field {
+                display: flex;
+                font-family: "Lato", sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                gap: 10px;
+                position: relative;
+
+                #email {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked~label .checkmark {
+                        background-image: url('../images/radio-selected.svg');
+
+                    }
+                }
+
+                label {
+                    padding-left: 30px;
+                    width: 100%;
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                        height: 25px;
+                        width: 25px;
+                        background-image: url('../images/radio.svg');
+                        background-repeat: no-repeat;
+                    }
+                }
+
+            }
+
+            #checked {
+                display: flex;
+            }
+
+            .input-field {
+                display: none;
+
+
+                .country-code {
+                    border-right: none;
+                    border-color: #B99692;
+                    padding-left: 40px;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: fit-content;
+                    background-image: url('../images/down-arrow.svg');
+                    background-repeat: no-repeat;
+                    background-position: left 12px center;
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding-right: 16px;
+
+                    option {
+                        font-family: "Lato", sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+
+                    }
+
+                }
+
+                #phone-number {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    width: 100%;
+                    border: 1px solid #B99692;
+                    border-left: none;
+                    padding-left: 0;
+                }
+
+                #whatsapp-number {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    width: 100%;
+                    border: 1px solid #B99692;
+                    border-left: none;
+                    padding-left: 0;
+                }
+
+                #sms-number {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    width: 100%;
+                    border: 1px solid #B99692;
+                    border-left: none;
+                    padding-left: 0;
+                }
+
+
+                #email-input {
+                    font-family: "Lato", sans-serif;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 1rem;
+                    width: 100%;
+                    border: 1px solid #B99692;
+
+                }
+            }
+        }
+
+        .submit-btn {
+            font-family: "Baskervville", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 1rem;
+            width: 100%;
+            border: .8px solid #5E4A49;
+            color: #5E4A49;
+            background-color: #FAE9E7;
+            transition: all .5s linear;
+
+            &:hover {
+                background-color: #B99692;
+                border: .8px solid #B99692;
+                color: white;
+            }
+        }
+    }
+}

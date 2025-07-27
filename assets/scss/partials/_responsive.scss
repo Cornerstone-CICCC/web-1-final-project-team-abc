@@ -31,7 +31,8 @@
                         }
                     }
 
-                    .services {
+                    .active {
+
                         a {
                             text-decoration: underline 1px;
                             text-underline-offset: 2px;
@@ -60,6 +61,7 @@
             display: none;
         }
     }
+
 
     main {
         .title {
@@ -311,6 +313,39 @@
                     line-height: 0;
                 }
 
+
+    .contact-form {
+
+        h1 {
+            font-size: 80px;
+            max-width: 569px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 569px;
+            padding-bottom: 60px;
+        }
+
+        form {
+            max-width: 768px;
+            padding: 60px 80px 60px 80px;
+
+            .event-type {
+                .event-options {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            .date-time {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .submit-btn {
+                max-width: 160px;
+                align-self: center;
             }
         }
     }
