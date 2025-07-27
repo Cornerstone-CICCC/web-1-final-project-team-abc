@@ -86,6 +86,7 @@ header .mobile-header nav menu p {
 }
 
 .contact-form {
+  background-color: rgb(248, 246, 244);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -613,7 +614,7 @@ header .mobile-header nav menu p {
 }
 
 .footer {
-  background-color: #fefcfa;
+  background-color: rgb(248, 246, 244);
   text-align: center;
   padding: 40px 20px;
   color: #5c4033;
@@ -629,6 +630,7 @@ header .mobile-header nav menu p {
   color: #000;
 }
 .footer-subtitle {
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   margin: 0;
   color: #333;
@@ -644,20 +646,22 @@ header .mobile-header nav menu p {
 .footer-nav {
   margin: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0 6rem;
   flex-wrap: wrap;
   gap: 30px;
 }
 .footer-nav a {
   text-decoration: none;
   color: #5c4033;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Baskervville", serif;
   position: relative;
   padding-bottom: 5px;
 }
 .footer-nav a.active {
-  border-bottom: 1px solid #5c4033;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .footer-bottom p {
   font-size: 13px;
@@ -667,25 +671,41 @@ header .mobile-header nav menu p {
 }
 .footer .divider {
   border: none;
-  border-top: 1px solid #c7b7af;
+  border-top: 1px solid black !important;
   margin: 20px auto;
   max-width: 85%;
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 1rem;
+    padding: 30px 15px;
   }
-  .footer-nav {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
+  .footer-logo {
+    width: 60px;
+  }
+  .footer-title {
+    font-size: 20px;
+  }
+  .footer-subtitle {
+    font-size: 13px;
   }
   .footer-icons {
-    font-size: 18px;
+    font-size: 16px;
   }
   .footer-icons i {
-    margin: 0 8px;
+    margin: 0 6px;
+  }
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 2rem;
+  }
+  .footer-nav a {
+    font-size: 25px;
+  }
+  .footer .divider {
+    max-width: 100%;
   }
   .footer-bottom p {
     font-size: 12px;
@@ -719,7 +739,7 @@ header .mobile-header nav menu p {
     text-decoration: underline 1px;
     text-underline-offset: 2px;
   }
-  header .desktop-header nav menu .home a {
+  header .desktop-header nav menu .active a {
     text-decoration: underline 1px;
     text-underline-offset: 2px;
   }

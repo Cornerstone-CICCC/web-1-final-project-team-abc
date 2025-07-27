@@ -1,0 +1,70 @@
+{
+    "sourceFile": "assets/js/review-script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1753509814367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1753509855238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,12 +59,12 @@\n     reviewText.textContent = item.review;\r\n     reviewerSigImg.src = item.reviewerSig_path;\r\n }\r\n \r\n-function showslides(){\r\n+function autoReviewSlide(){\r\n     \r\n     for(let i=1;i<=reviews.length; i++){\r\n         showReview(i)\r\n     }\r\n }\r\n \r\n\\ No newline at end of file\n-setTimeout(showReview,3000)\n+setTimeout(autoReviewSlide,3000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753510024133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,10 +61,10 @@\n }\r\n \r\n function autoReviewSlide(){\r\n     \r\n-    for(let i=1;i<=reviews.length; i++){\r\n-        showReview(i)\r\n-    }\r\n+    showReview(currentItem)\r\n+\r\n+    currentItem = (currentItem +1)%reviews.length\r\n }\r\n \r\n setTimeout(autoReviewSlide,3000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753510046188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,5 +66,5 @@\n \r\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n \r\n-setTimeout(autoReviewSlide,3000)\n\\ No newline at end of file\n+setTimeout(autoReviewSlide,1000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753510113684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n const prevBtn = document.querySelector(\".prev-btn\")\r\n const nextBtn = document.querySelector(\".next-btn\")\r\n \r\n let currentItem = 0\r\n-\r\n+autoReviewSlide()\r\n // load initial item\r\n window.addEventListener(\"DOMContentLoaded\", function () {\r\n   const item = reviews[currentItem];\r\n  \r\n"
+                },
+                {
+                    "date": 1753510181399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n const prevBtn = document.querySelector(\".prev-btn\")\r\n const nextBtn = document.querySelector(\".next-btn\")\r\n \r\n let currentItem = 0\r\n-autoReviewSlide()\r\n+\r\n // load initial item\r\n window.addEventListener(\"DOMContentLoaded\", function () {\r\n   const item = reviews[currentItem];\r\n  \r\n@@ -65,6 +65,7 @@\n     showReview(currentItem)\r\n \r\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n+autoReviewSlide()\r\n \r\n setTimeout(autoReviewSlide,1000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753510224294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n }\r\n \r\n function autoReviewSlide(){\r\n     \r\n+    console.log(\"hi\")\r\n     showReview(currentItem)\r\n \r\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n"
+                },
+                {
+                    "date": 1753510275192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,14 +57,16 @@\n     const item = reviews[reviewId]\r\n \r\n     reviewText.textContent = item.review;\r\n     reviewerSigImg.src = item.reviewerSig_path;\r\n+     console.log(\"show slides\")\r\n }\r\n \r\n function autoReviewSlide(){\r\n     \r\n     console.log(\"hi\")\r\n     showReview(currentItem)\r\n+     console.log(\"hi\")\r\n \r\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n autoReviewSlide()\r\n"
+                },
+                {
+                    "date": 1753510298491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,5 +70,5 @@\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n autoReviewSlide()\r\n \r\n-setTimeout(autoReviewSlide,1000)\n\\ No newline at end of file\n+setTimeout(autoReviewSlide,2000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753510316844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,10 @@\n }\r\n \r\n function autoReviewSlide(){\r\n     \r\n-    console.log(\"hi\")\r\n+    console.log(currentItem)\r\n+\r\n     showReview(currentItem)\r\n      console.log(\"hi\")\r\n \r\n     currentItem = (currentItem +1)%reviews.length\r\n"
+                },
+                {
+                    "date": 1753510353258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,12 +54,13 @@\n \r\n //save review data\r\n function showReview(reviewId){\r\n     const item = reviews[reviewId]\r\n+    console.log(item)\r\n \r\n     reviewText.textContent = item.review;\r\n     reviewerSigImg.src = item.reviewerSig_path;\r\n-     console.log(\"show slides\")\r\n+\r\n }\r\n \r\n function autoReviewSlide(){\r\n     \r\n"
+                },
+                {
+                    "date": 1753511015680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,8 @@\n \r\n //save review data\r\n function showReview(reviewId){\r\n     const item = reviews[reviewId]\r\n-    console.log(item)\r\n \r\n     reviewText.textContent = item.review;\r\n     reviewerSigImg.src = item.reviewerSig_path;\r\n \r\n@@ -72,5 +71,5 @@\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n autoReviewSlide()\r\n \r\n-setTimeout(autoReviewSlide,2000)\n\\ No newline at end of file\n+setInterval(autoReviewSlide,2000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753511041144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,15 +61,11 @@\n \r\n }\r\n \r\n function autoReviewSlide(){\r\n-    \r\n-    console.log(currentItem)\r\n \r\n     showReview(currentItem)\r\n-     console.log(\"hi\")\r\n-\r\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n autoReviewSlide()\r\n \r\n-setInterval(autoReviewSlide,2000)\n\\ No newline at end of file\n+setInterval(autoReviewSlide,5000)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1753511052094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,5 +67,5 @@\n     currentItem = (currentItem +1)%reviews.length\r\n }\r\n autoReviewSlide()\r\n \r\n-setInterval(autoReviewSlide,5000)\n\\ No newline at end of file\n+setInterval(autoReviewSlide,3000)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1753509814367,
+            "name": "Commit-0",
+            "content": "// Review data\r\nconst reviews = [\r\n    {\r\n        id: 1,\r\n        review: \"Carla is the best! She made me the night's brightest star! She stayed with me the whole  wedding ensuring I always looked and felt wonderful!!\",\r\n        reviewerSig_path:\"/assets/images/Janny.png\"\r\n    },\r\n    {\r\n        id: 2,\r\n        review: \"Carla Beauty's party makeup service was amazing! The makeup lasted all night, keeping me flawless until the end. Thank you, Carla for an unforgettable experience!\",\r\n        reviewerSig_path:\"/assets/images/Marcela.png\"\r\n    },\r\n    {\r\n        id: 3,\r\n        review: \"Carla Beauty's makeup for my photoshoot was outstanding! Their expertise and attention to detail made me look perfect in every shot. Highly recommend!\",\r\n        reviewerSig_path:\"/assets/images/Ingrid.png\"\r\n    },\r\n]\r\n\r\n//select items to change\r\nconst reviewText = document.getElementById(\"review-desc\")\r\nconst reviewerSigImg = document.getElementById(\"reviewer_sig\")\r\n\r\nconst prevBtn = document.querySelector(\".prev-btn\")\r\nconst nextBtn = document.querySelector(\".next-btn\")\r\n\r\nlet currentItem = 0\r\n\r\n// load initial item\r\nwindow.addEventListener(\"DOMContentLoaded\", function () {\r\n  const item = reviews[currentItem];\r\n \r\n  reviewText.textContent = item.review;\r\n  reviewerSigImg.src = item.reviewerSig_path;\r\n\r\n});\r\n\r\n\r\nnextBtn.addEventListener(\"click\", function(){\r\n    currentItem++\r\n    if (currentItem > reviews.length -1){\r\n        currentItem = 0\r\n    }\r\n    showReview(currentItem)\r\n})\r\n\r\nprevBtn.addEventListener(\"click\", function(){\r\n    currentItem--\r\n    if(currentItem < 0){\r\n        currentItem = reviews.length-1\r\n    }\r\n    showReview(currentItem)\r\n})\r\n\r\n//save review data\r\nfunction showReview(reviewId){\r\n    const item = reviews[reviewId]\r\n\r\n    reviewText.textContent = item.review;\r\n    reviewerSigImg.src = item.reviewerSig_path;\r\n}\r\n\r\nfunction showslides(){\r\n    \r\n    for(let i=1;i<=reviews.length; i++){\r\n        showReview(i)\r\n    }\r\n}\r\n\r\nsetTimeout(showReview,3000)"
+        }
+    ]
+}
