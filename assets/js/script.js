@@ -41,3 +41,4 @@ contactMethods.forEach((radio, index) => {
     });
   });
   console.log("Script loaded");
+
