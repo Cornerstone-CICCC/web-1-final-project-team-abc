@@ -9,104 +9,203 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <section class="aboutMe w-full">
-        <div class="d-flex flex-column justify-content-center px-2 py-5 title-container">
-        <h4 class="d-flex justify-content-center page-title">ABOUT</h4>
-        <h1 class="h1-cap d-flex justify-content-center">CARLA BRAUTY</h1>
-        </div>
+    <!-- Copied items -->
+        <!-- <div class="container"> -->
 
-        <div class="about-description-card">
-            <img src="/assets/images/picture_aboutMe.png" alt="picture of me" >
+        <!-- Header -->
+        <header>
+            <div class="desktop-header">
+                <nav>
+                    <menu>
+                        <li class="home">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="work">
+                            <a href="#">My Work</a>
+                        </li>
+                        <li class="services">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="classes">
+                            <a href="#">Classes</a>
+                        </li>
+                    </menu>
+                </nav>
+                <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="BC Beauty Logo"></a></div>
+                <nav>
+                    <menu>
+                        <li class="tips">
+                            <a href="#">Beauty Tips</a>
+                        </li>
+                        <li class="about active">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="contact">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="instagram">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </menu>
+                </nav>
+            </div>
 
-            <div class="about-text-container">
-                <h3 class="h5">Hi, Im Carla Beatriz, <br>the Founder of Carla Beauty.</h3>
+            <div class="mobile-header">
+                <nav>
+                    <input type="checkbox" id="burger-menu">
+                    <label for="burger-menu" class="open-menu"><i class="fa-solid fa-bars" style="color: #725a58; font-size: 2rem;"></i></label>
+                    <label for="burger-menu" class="close-menu"><i class="fa-solid fa-xmark" style="color: #725a58;"></i></label>
 
-                <p>
-                    At Carla Beauty, our commitment lies in personalized service in enhancing natural beauty of individuals. 
-                    With a focus on the client's style and skin type, we create customized makeup looks using high-quality products and staying updated on the latest trends. 
-                    As a L'Oréal Certified professional makeup artist with over a decade of experience in Brazil and Canada, my goal is to provide clients with an unforgettable experience that leaves them feeling beautiful and confident.
-                </p>
-                
-                <div class=" btn-aboutMe-container">
-                <button class="btn-aboutMe">My Work</button>
+                    <menu>
+                        <li class="home">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="work">
+                            <a href="#">My Work</a>
+                        </li>
+                        <li class="services">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="classes">
+                            <a href="#">Classes</a>
+                        </li>
+                        <li class="tips">
+                            <a href="#">Beauty Tips</a>
+                        </li>
+                        <li class="about">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="contact">
+                            <a href="#">Contact</a>
+                        </li>
+                        <div class="icons">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Expert Makeup and Hairstyle Studio</p>
+                    </menu>
+
+                    <div class="logo">
+                        <a href="#"><img src="./assets/images/logo.png" alt="BC Beauty Logo"></a>
+                    </div>
+                    <div class="instagram-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- About page main -->
+        <section class="aboutMe w-full">
+            <div class="d-flex flex-column justify-content-center px-2 py-5 title-container">
+            <h4 class="d-flex justify-content-center page-title">ABOUT</h4>
+            <h1 class="h1-cap d-flex justify-content-center">CARLA BRAUTY</h1>
+            </div>
+
+            <div class="about-description-card">
+                <img src="/assets/images/picture_aboutMe.png" alt="picture of me" >
+
+                <div class="about-text-container">
+                    <h3 class="h5">Hi, Im Carla Beatriz, <br>the Founder of Carla Beauty.</h3>
+
+                    <p>
+                        At Carla Beauty, our commitment lies in personalized service in enhancing natural beauty of individuals. 
+                        With a focus on the client's style and skin type, we create customized makeup looks using high-quality products and staying updated on the latest trends. 
+                        As a L'Oréal Certified professional makeup artist with over a decade of experience in Brazil and Canada, my goal is to provide clients with an unforgettable experience that leaves them feeling beautiful and confident.
+                    </p>
+                    
+                    <div class=" btn-aboutMe-container">
+                    <button class="btn-aboutMe">My Work</button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="brand-container">
+                <h3 class="h5 d-flex justify-content-center pt-3 pb-2">Our Brands</h3>
+                <div class="d-flex justify-content-center px-1">
+
+                    <div class="brand-logo-container">
+                        <!-- MAC -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/MAC_Cosmetics_logo.png" alt="MAC Cosmetics Logo">
+                        </div>
+                        <!-- Lancome -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/Lancôme_logo.png" alt="Lancome Logo">
+                        </div>
+                        <!-- INGLOT -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/inglot_logo.png" alt="INGLOT Logo">
+                        </div>
+                        <!-- Charlotte Tilbury -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/charlotteTilbury_logo.png" alt="Charlotte Tilbury Logo">
+                        </div>
+                        <!-- Anastasia -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/anastasia_logo.png" alt="Anastasia Logo">
+                        </div>
+                        <!-- tarte -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/tarte_logo.png" alt="Tarte Logo">
+                        </div>
+                        <!-- Laura Mercer -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/Laura Mercier_logo.png" alt="Laura Mercer Logo">
+                        </div>
+                        <!-- KRYOLAN -->
+                        <div class = "logo-container" >
+                            <img src="/assets/images/kryolan_logo.png" alt="KRYOLAN Logo">
+                        </div>
+                    </div>
+
                 </div>
             </div>
-    
-        </div>
+        </section>
 
-        <div class="brand-container">
-            <h3 class="h5 d-flex justify-content-center pt-3 pb-2">Our Brands</h3>
-            <div class="d-flex justify-content-center px-1">
-
-                <div class="brand-logo-container">
-                    <!-- MAC -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/MAC_Cosmetics_logo.png" alt="MAC Cosmetics Logo">
-                     </div>
-                    <!-- Lancome -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/Lancôme_logo.png" alt="Lancome Logo">
-                    </div>
-                    <!-- INGLOT -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/inglot_logo.png" alt="INGLOT Logo">
-                    </div>
-                    <!-- Charlotte Tilbury -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/charlotteTilbury_logo.png" alt="Charlotte Tilbury Logo">
-                    </div>
-                    <!-- Anastasia -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/anastasia_logo.png" alt="Anastasia Logo">
-                    </div>
-                    <!-- tarte -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/tarte_logo.png" alt="Tarte Logo">
-                    </div>
-                    <!-- Laura Mercer -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/Laura Mercier_logo.png" alt="Laura Mercer Logo">
-                    </div>
-                    <!-- KRYOLAN -->
-                    <div class = "logo-container" >
-                        <img src="/assets/images/kryolan_logo.png" alt="KRYOLAN Logo">
-                    </div>
-                </div>
-
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+            <img class="footer-logo" src="assets/images/logo.png" alt="Carla Beauty Logo" />
+            <h2 class="footer-title">Carla Beauty</h2>
+            <p class="footer-subtitle">Expert Makeup and Hairstyle Studio</p>
+            <div class="footer-icons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
-        </div>
-    </section>
+            </div>
 
-      <footer class="footer">
-    <div class="footer-top">
-      <img class="footer-logo" src="assets/images/logo.png" alt="Carla Beauty Logo" />
-      <h2 class="footer-title">Carla Beauty</h2>
-      <p class="footer-subtitle">Expert Makeup and Hairstyle Studio</p>
-      <div class="footer-icons">
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
+            <hr class="divider">
 
-    <hr class="divider">
+            <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">My Work</a>
+            <a href="#">Services</a>
+            <a href="#">Classes</a>
+            <a href="#">Beauty Tips</a>
+            <a href="#" class="active">About</a>
+            <a href="#">Contact</a>
+            </nav>
 
-    <nav class="footer-nav">
-      <a href="#">Home</a>
-      <a href="#" class="active">My Work</a>
-      <a href="#">Services</a>
-      <a href="#">Classes</a>
-      <a href="#">Beauty Tips</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+            <hr class="divider">
 
-    <hr class="divider">
-
-    <div class="footer-bottom">
-      <p>Copyright 2024, Carla Beauty</p>
-    </div>
-  </footer>
+            <div class="footer-bottom">
+            <p>Copyright 2024, Carla Beauty</p>
+            </div>
+        </footer>
+    <!-- </div> -->
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

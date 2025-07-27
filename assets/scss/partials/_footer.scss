@@ -1,7 +1,7 @@
-@import './variables';
+@use './variables';
 
 .footer {
-    background-color: #fefcfa;
+    background-color: rgba(248, 246, 244, 1);
     text-align: center;
     padding: 40px 20px;
     color: #5c4033;
@@ -19,6 +19,7 @@
     }
   
     &-subtitle {
+      font-family: "Lato", sans-serif;
       font-size: 14px;
       margin: 0;
       color: #333;
@@ -37,20 +38,22 @@
     &-nav {
       margin: 20px 0;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      padding: 0 6rem;
       flex-wrap: wrap;
       gap: 30px;
   
       a {
         text-decoration: none;
-        color: $brown;
-        font-size: 16px;
+        color: variables.$brown;
+        font-size: 20px;
         font-family: 'Baskervville', serif;
         position: relative;
         padding-bottom: 5px;
-  
-        &.active {
-          border-bottom: 1px solid $brown;
+
+         &.active {
+          text-decoration: underline;
+          text-underline-offset: 3px;
         }
       }
     }
@@ -66,7 +69,7 @@
   
     .divider {
       border: none;
-      border-top: 1px solid $divider;
+      border-top: 1px solid black !important;
       margin: 20px auto;
       max-width: 85%;
     }
@@ -97,10 +100,12 @@
       }
   
       &-nav {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
+        padding: 0 2rem;
         a {
-          font-size: 14px;
+          font-size: 25px;
         }
       }
   
