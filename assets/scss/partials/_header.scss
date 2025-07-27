@@ -5,12 +5,13 @@ header {
     top: 0;
     z-index: 100;
 
+
     .desktop-header {
         display: none;
     }
 
     .mobile-header {
-      
+
         nav {
             display: flex;
             justify-content: space-between;
