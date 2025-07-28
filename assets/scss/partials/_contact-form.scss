@@ -29,7 +29,7 @@
         flex-direction: column;
         gap: 40px;
         background-color: #FAE9E7;
-        padding: 2rem 3rem;
+        padding: 1rem;
 
 
         .services-title {
@@ -640,6 +640,9 @@
                 border: .8px solid #B99692;
                 color: white;
             }
+        }
+        @media screen and (min-width: 768px) {
+            padding: 2rem 3rem;
         }
     }
 }
