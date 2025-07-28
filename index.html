@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BC Beauty</title>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 <body>
 
@@ -457,7 +460,7 @@
                             <label for="event-date"></label>
                             <input type="date" name="event-date" id="event-date" placeholder="Select Date" required>
                             <div class="not-decided-date">
-                                <input type="checkbox" id="not-decided-date">
+                                <input type="checkbox" name="not-decided-date" id="not-decided-date">
                                 <label for="not-decided-date"> <span class="checkmark"></span>Not decided</label>
                                 
                             </div>
@@ -472,7 +475,7 @@
                                 <option value="half-day">Half day</option>
                             </select>
                             <div class="not-decided-time">
-                                <input type="checkbox" id="not-decided-time">
+                                <input type="checkbox" name="not-decided-time" id="not-decided-time">
                                 <label for="not-decided-time"><span class="checkmark"></span>Not decided</label>
                                 
                             </div>
@@ -498,7 +501,9 @@
                             <option value="81">+81</option>
                         </select>
                         <label for="phone-number"></label>
-                        <input type="tel" id="phone-number" placeholder="Your mobile number" autocomplete="off">
+                        <input type="tel" id="phone-number" 
+                        name="contact-info"
+                        placeholder="Your mobile number" autocomplete="off">
                     </div>
                     <div class="whatsapp-input">
                         <input type="radio" value="whatsapp" name="contact-method" id="whatsapp">
@@ -512,7 +517,9 @@
                             <option value="81">+81</option>
                         </select>
                         <label for="whatsapp-number"></label>
-                        <input type="tel" id="whatsapp-number" placeholder="Your WhatsApp number" autocomplete="off">
+                        <input type="tel" id="whatsapp-number"
+                        name="contact-info"
+                        placeholder="Your WhatsApp number" autocomplete="off">
                     </div>
                     <div class="sms-input">
                         <input type="radio" value="sms" name="contact-method" id="sms">
@@ -526,7 +533,9 @@
                             <option value="81">+81</option>
                         </select>
                         <label for="sms-number"></label>
-                        <input type="tel" id="sms-number" placeholder="Your SMS number" autocomplete="off">
+                        <input type="tel" id="sms-number"
+                        name="contact-info"
+                        placeholder="Your SMS number" autocomplete="off">
                     </div>
                     <div class="email-input-field">
                         <input type="radio" value="email" name="contact-method" id="email" autocomplete="off">
@@ -535,7 +544,9 @@
                     </div>
                     <div class="input-field">
                         <label for="email-input"></label>
-                        <input type="email" id="email-input" title="Only gmail accounts are allowed" pattern="^[a-zA-Z0-9_.+]+@gmail\.com$" placeholder="Your email address" autocomplete="off">
+                        <input type="email" id="email-input" 
+                        name="contact-info"
+                        title="Only gmail accounts are allowed" pattern="^[a-zA-Z0-9_.+]+@gmail\.com$" placeholder="Your email address" autocomplete="off">
                     </div>
                 </div>
                 <button type="submit" class="submit-btn">Submit</button>
@@ -574,7 +585,9 @@
             <p>Copyright 2024, Carla Beauty</p>
             </div>
         </footer>
-
+    <!-- Emailjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- js -->
     <script src="./assets/js/script.js"></script>
     <script  src="/assets/js/review-script.js"></script>
 </body>
