@@ -47,6 +47,10 @@
             overflow-y: auto;
             gap: 1.5rem;
 
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
             .video-1{
                 content: url("/assets/images/video-images/video_1-mobile.png");
             }
