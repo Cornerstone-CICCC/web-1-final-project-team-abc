@@ -11,6 +11,7 @@ const TEMPLATE_ID = "template_5iv7b1v";
 
 const form = document.querySelector("form")
 
+// event type
 
 const eventTypes = document.querySelectorAll(".event-options div")
 
@@ -29,33 +30,88 @@ eventTypes.forEach(option => {
     })
 });
 
+// contact method
+
 contactMethods.forEach((radio, index) => {
     radio.addEventListener("change", () => {
-        inputFields.forEach(field => field.removeAttribute("id")); // Remove ID from all
+        inputFields.forEach((field, i) => {
+            field.removeAttribute("id");
+
+            if (i !== index) {
+
+                const select = field.querySelector("select");
+                const input = field.querySelector("input");
+
+                if (select) select.selectedIndex = 0;
+                if (input) input.value = "";
+            }
+        });
 
         if (radio.checked) {
-            inputFields[index].id = "checked"; // Add ID to corresponding input-field
+            inputFields[index].id = "checked";
         }
     });
 });
+
+// disable time and day input when not decided checked
+
+const dateInput = document.querySelector('input[name="event-date"]');
+const timeInput = document.querySelector('select[name="event-time"]');
+const dateCheckbox = document.querySelector('input[name="not-decided-date"]');
+const timeCheckbox = document.querySelector('input[name="not-decided-time"]');
+
+
+dateCheckbox.addEventListener("change", () => {
+    dateInput.disabled = dateCheckbox.checked;
+});
+
+timeCheckbox.addEventListener("change", () => {
+    timeInput.disabled = timeCheckbox.checked;
+});
+
 
 // submit form
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    form.querySelectorAll("[disabled]").forEach(el => el.disabled = false);
+
     const formData = new FormData(form);
+
+    const selectedMethod = formData.get("contact-method");
+
+    let contactInfo = "";
+
+    switch (selectedMethod) {
+        case "call":
+            contactInfo = `+${formData.get("country-code-call")} ${formData.get("contact-info-call")}`;
+            break;
+        case "whatsapp":
+            contactInfo = `+${formData.get("country-code-whatsapp")} ${formData.get("contact-info-whatsapp")}`;
+            break;
+        case "sms":
+            contactInfo = `+${formData.get("country-code-sms")} ${formData.get("contact-info-sms")}`;
+            break;
+        case "email":
+            contactInfo = `${formData.get("contact-info-email")}`;
+            break;
+    }
+
+    const isDateUndecided = formData.get("not-decided-date");
+    const isTimeUndecided = formData.get("not-decided-time");
+
+    const eventDateOutput = isDateUndecided ? "Not decided" : formData.get("event-date");
+    const eventTimeOutput = isTimeUndecided ? "Not decided" : formData.get("event-time");
+
 
     const message = `
     Event Type: ${formData.get("event-type")}
-    Event Date: ${formData.get("event-date") || "Not decided"}
-    Event Time: ${formData.get("event-time") || "Not decided"}
-    Date Undecided: ${formData.get("not-decided-date") ? "Yes" : "No"}
-    Time Undecided: ${formData.get("not-decided-time") ? "Yes" : "No"}
-
+    Event Date: ${eventDateOutput}
+    Event Time: ${eventTimeOutput}
     Name: ${formData.get("name")}
-    Contact Info: ${(formData.get("country-code-call") || formData.get("country-code-whatsapp") || formData.get("country-code-sms")) && (formData.get("contact-info-call") || formData.get("contact-info-whatsapp") || formData.get("contact-info-sms") || formData.get("contact-info-email"))}
-    Preferred Contact Method: ${formData.get("contact-method")}
+    Contact Info: ${contactInfo}
+    Preferred Contact Method: ${selectedMethod}
   `;
 
     const templateParams = {
@@ -68,6 +124,11 @@ form.addEventListener("submit", function (event) {
         () => {
             alert("Message sent successfully!");
             form.reset();
+            eventTypes.forEach(event => event.classList.remove("select"))
+            eventTypes[0].classList.add("select")
+            form.querySelector('#call').checked = true;
+            inputFields.forEach(field => field.removeAttribute("id"));
+            inputFields[0].id = "checked";
         },
         (error) => {
             console.error("FAILED...", error);
