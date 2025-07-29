@@ -32,3 +32,7 @@
 Presentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.
 
 Good luck! :)
+
+## sass command in bash
+
+`sass --watch assets/scss/style.scss assets/css/style.css`
