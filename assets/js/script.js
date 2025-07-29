@@ -75,6 +75,8 @@ timeCheckbox.addEventListener("change", () => {
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    form.querySelectorAll("[disabled]").forEach(el => el.disabled = false);
+
     const formData = new FormData(form);
 
     const selectedMethod = formData.get("contact-method");
@@ -122,6 +124,11 @@ form.addEventListener("submit", function (event) {
         () => {
             alert("Message sent successfully!");
             form.reset();
+            eventTypes.forEach(event => event.classList.remove("select"))
+            eventTypes[0].classList.add("select")
+            form.querySelector('#call').checked = true;
+            inputFields.forEach(field => field.removeAttribute("id"));
+            inputFields[0].id = "checked";
         },
         (error) => {
             console.error("FAILED...", error);
