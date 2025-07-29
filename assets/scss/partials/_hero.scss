@@ -1,0 +1,413 @@
+
+.hero-container{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 1) 100%)
+    // ,linear-gradient(to top,  rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%) 
+    ,url('/assets/images/hero_img.png');
+    height: 630px;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-family:"Baskervville", serif;
+
+    .hero-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 5rem;
+        img{
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-paragraph{
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family:  "Lato", sans-serif;
+
+            div{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+
+                @media screen and (min-width: 1100px){
+                width: 100%;
+                margin-top: 1rem;
+                }
+            }
+            .hero-btn{
+                width: 70%;
+                background-color: transparent;
+                border: 1px solid white;
+                padding: 1rem 4rem;
+                margin-top: 1.5rem;
+                font-family:"Baskervville", serif;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover{
+                    border: none;
+                    background-color: rgba(248, 246, 244, 0.5);
+
+                    a{
+                        color: black;
+                    }
+                }
+
+                @media screen and (min-width: 1100px){
+                    font-size: 20px;
+                    width: fit-content;
+                    padding: 1rem 2rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+// About Me
+.home-aboutMe{
+    color: #535353;
+    background-color: rgba(248, 246, 244, 1);
+    font-family:"Baskervville", serif;
+    .home-aboutMe-container{
+        padding: 2rem 1rem 1rem 1rem;
+
+        @media screen and (min-width: 1100px) {
+            padding:  5rem 5rem 4rem 5rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            gap: 4rem;
+        }
+
+        .top-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+
+            @media screen {
+                position: relative;
+            }
+
+            .cb_logo{
+
+            &::after{
+                content: url("/assets/images/cb_logo-grey.png");
+                width: 10%;
+                display: inline-block;
+                height: auto;
+                max-width: 50px;
+            }
+            }
+            
+            @media screen and (min-width: 1100px) {
+                .cb_logo::after{
+                    width: 7%;
+                    margin: 1rem 0;
+                    content: url("/assets/images/cb_logo-pink.png");
+                }
+            }
+
+            .about-top-container{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                
+
+            @media screen and (min-width: 1100px) {
+                justify-content: start;
+                justify-items: start;
+                text-align: start;
+
+                .about-top-text{
+                width: 80%;
+                }
+            }
+
+            .position-title{
+                font-size: 32px;
+                margin: 0.5rem;
+                font-weight: 400;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 38px;
+                }
+            }
+            div{
+                font-size: 16px;
+                font-family: "Lato", sans-serif;
+                margin: 0.7rem 5rem;
+
+                @media screen and (min-width: 1100px) {
+                    margin: 0;
+                }
+            }
+            
+            img.signiture_cb{
+                width:50%;
+                height: auto;
+                margin: 2rem auto;
+
+                @media screen and  (min-width: 1100px) {
+                    transform: rotate(-10deg);
+                    width: fit-content;
+                    display: inline;
+                    position: absolute;
+                    right: 100px;
+                }
+            }
+
+            a{
+                padding: 1rem 3rem;
+                border: 1px solid #725A58;
+                color: #725A58;
+                text-decoration: none;
+
+                @media screen and (min-width: 1100px) {
+                    margin-top: 2rem;
+                }
+
+            }
+            }
+
+            .about-btn-container{
+                margin-bottom: 1.5rem
+            }
+
+            .about-btn-container:hover{
+                a{
+                    color: #F8F6F4;
+                    background-color: #B99692;
+                    border: none;
+                }
+            }
+        }
+
+        .about-picture-card{
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 2rem auto;
+            position: relative;
+            z-index: 0;
+
+            .about-picture-card-top{
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .aboutMe-picture{
+                    background: linear-gradient(to left bottom, #E3B6B1 50%, rgb(174,120,114,100%) 100%);
+                }
+
+                .instagram-account{
+                    position: absolute;
+                    bottom: 5%;
+                    left: 20%;
+                    display: flex;
+                    align-items: center;
+                    img.instagram-icon{
+                        height: 10%;
+                    }
+                    div{
+                        color: rgb(248, 248, 244);
+                        font-family:"Lato", sans-serif;
+                        padding: 0 0.2rem;
+                    }
+                }
+            }
+
+            .about-picture-card-bottom{
+                display: inline-block;
+                width: fit-content;
+                border: 0.5px solid rgba(136, 136, 136, 1);
+                padding: 1rem 1.9rem;
+                background-color: rgba(251, 250, 250, 1);
+
+                div{
+                    display: flex;
+                    gap: 1.5rem;
+                    font-family:"Lato", sans-serif;
+                    font-size: 14px;
+
+                    p{
+                        margin: auto 0;
+                    }
+                }
+            }
+
+            .outline-border{                 
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(227, 182, 177, 1);
+                z-index: -1;
+                top: -15px;
+                left: 15px;
+            }
+
+            @media screen and (min-width: 1100px) {
+                margin: 0;
+                z-index: 99;
+                position: relative;
+
+                .outline-border{
+                    top: -15px;
+                    left: 15px;
+                }
+            }
+
+
+        }    
+    }
+}
+
+// Brand Logo Senction
+.brand-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 1100px) {
+        padding: 3rem 5rem;
+        width: auto;
+    }
+    .brands-text-container{
+
+        @media screen and (min-width: 1100px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section-divider{
+            position: relative;
+            text-align: center;
+            margin: 2rem;
+
+            @media screen and (min-width: 1100px) {
+                margin: 0;
+            }
+
+            span{
+                position: relative;
+                background-color: #F8F6F4;
+                padding: 0 1rem;
+                z-index: 1;
+                font-size: 22px;
+                font-weight: 300;
+                color: rgba(83,83,83,1);
+                font-family: "Lato", sans-serif;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 18px;
+                }
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 0.5px;
+                background-color: rgba(136,136,136,1);
+                z-index: 0;
+
+                @media screen and (min-width: 1100px) {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+
+    .brand-logo-container{
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 4rem;
+        
+        .logo-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 50%;
+
+            img{
+                opacity: 60%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (min-width: 1100px) {
+            padding: 3rem 5rem;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+
+            .logo-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    max-width: 150px;
+                    opacity: 40%;
+                }
+            }
+
+            .logo-container:nth-child(1) {
+                order: 1;
+            }
+            .logo-container:nth-child(2) {
+                order: 2;
+            }
+            .logo-container:nth-child(3) {
+                order: 3;
+            }
+            .logo-container:nth-child(4) {
+                order: 5;
+            }
+
+            .logo-container:nth-child(5) {
+                order: 7;
+            }
+            .logo-container:nth-child(6) {
+                order: 6;
+            }
+            .logo-container:nth-child(7) {
+                order: 4;
+            }
+            .logo-container:nth-child(8) {
+                order: 8;
+            }
+        }
+
+            @media screen and (min-width: 1200px) {
+            width: 969px;
+            }
+    }
+    
+}  
+

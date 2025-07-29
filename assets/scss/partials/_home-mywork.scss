@@ -1,0 +1,556 @@
+
+    .mywork-section{
+        background-color: #FAE9E7;
+        padding: 2rem 0;
+        font-family:"Baskervville", serif;
+        color: rbga(114,90,88,1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .mywork-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .h4-cap{
+                font-size: 40px;
+                font-weight: 400;
+                margin: 2rem;
+                color: rgba(114, 90, 88, 1);
+
+                @media  screen and (min-width:900px){
+                    font-size: 80px;                  
+                }
+    
+            }
+
+
+            .line-section{
+                width: 200px;
+                margin: 0 auto;
+                height: 1px;
+                border-top: 1px solid rgba(227,182,177,1);
+                padding-bottom: 2rem;
+            }
+            
+            .mywork-top-text{
+                font-family:  "Lato", sans-serif;
+                padding: 0 2rem;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.6;
+
+                @media screen and (min-width:900px){
+                    margin: 0 auto;
+                    width: 30%;
+                    font-size: 18px;;
+                }
+            }
+        }
+        
+        div.mywork-btn-container{
+            padding: 1rem 2rem;
+            border: 1px solid rgba(94,74,73,1);
+            margin: 2rem auto;
+            text-align: center;
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color: rgba(94,74,73,1);
+            }
+
+            &:hover{
+                border: none ;
+                background-color: #B99692;
+                a{
+                    color: #FBFAFA;
+                }
+            }
+
+            @media screen and (min-width:900px){
+                padding: 1rem 2.5rem;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .mywork-img-section{
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 1rem;
+
+        img{
+            width: 100%;
+            aspect-ratio: 3 / 4 ;
+            height: auto;
+            display: block;
+        }
+
+        @media screen and (min-width:900px){
+            margin: 1rem 0;
+            width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .review-container{
+
+
+        .review-card-div{
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        .review-text-container{
+            line-height: 1.6;
+            font-weight: 400;
+            margin: 1rem 0.8rem;
+
+            @media screen and (min-width: 1000px) {
+                font-size: 32px;
+                padding: 0 15rem;
+            }
+        }
+
+        .review-btn-container{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+
+            button.review-btn{
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            margin: 2rem 8rem;        
+        }
+    }
+
+
+    // Makeup & Hairstyle section
+    .makeup-and-hair-section{
+        background-color: rgba(248, 246, 244, 1);
+        padding: 2rem 0;
+        font-family:"Baskervville", serif;
+        color: rbga(114,90,88,1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .makeup-and-hair-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .h4-cap{
+                font-size: 40px;
+                font-weight: 400;
+                margin: 2rem;
+                color: rgba(114, 90, 88, 1);
+
+                @media  screen and (min-width:900px){
+                    font-size: 80px;                  
+                }
+    
+            }
+
+
+            .line-section{
+                width: 200px;
+                margin: 0 auto;
+                height: 1px;
+                border-top: 1px solid rgba(227,182,177,1);
+                padding-bottom: 2rem;
+            }
+            
+            .makeup-and-hair-top-text{
+                font-family:  "Lato", sans-serif;
+                padding: 0 2rem;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.6;
+
+                @media screen and (min-width:900px){
+                    margin: 0 auto;
+                    width: 30%;
+                    font-size: 18px;;
+                }
+            }
+        }
+        
+        div.makeup-and-hair-btn-container{
+            padding: 1rem 2rem;
+            border: 1px solid rgba(94,74,73,1);
+            margin: 2rem auto;
+            text-align: center;
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color: rgba(94,74,73,1);
+            }
+
+            &:hover{
+                border: none ;
+                background-color: #B99692;
+                a{
+                    color: #FBFAFA;
+                }
+            }
+
+            @media screen and (min-width:900px){
+                padding: 1rem 2.5rem;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        // images container not quite responsive...
+        .makeup-and-hair-imgs{
+
+            .img-container-wedding::after{
+                    content:url("/assets/images/wedding_look-mobile.png");
+                    // content: "";
+                    // display: block;
+
+                    // width: 300px;
+                    // height: 400px;
+
+                    // background-image: url("/assets/images/wedding_look-mobile.png");
+                    // background-image: cover;
+                    // background-position: center;
+                    // background-repeat: no-repeat;
+                    // margin: 0 auto;
+
+                    @media screen and (min-width:1300px) {
+                        content: url("/assets/images/wedding_look.png");
+                    }
+                }
+
+            .image-container{
+                position: relative;
+                text-align: center;
+                color: #FBFAFA;
+                z-index: 10;
+                margin: 2rem 3rem;
+
+                .make-up-hair-img{
+                     margin: 0 auto;
+                }
+
+                .text-on-image{
+                    position: absolute;
+                    bottom: 0.5rem;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 45px;
+                }
+
+                @media screen and (min-width:900px) {
+                    margin: 0;
+                }
+            }
+
+            @media screen and (min-width:1200px){
+                margin: 2rem 4rem;
+                
+                .makeup-and-hair-img-container{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: center;
+                    place-items: center;
+                    gap: 3rem;
+
+                    .image-container:nth-child(1) {
+                        order: 2;
+                        
+                        .text-on-image{
+                            left: 70px;
+                            font-size: 55px;
+                        }
+                        .behind-border{
+                            position: absolute;
+                            border: 1px solid #E3B6B1;
+                            width: 100%;
+                            height: 100%;
+                            top: -15px;
+                            left: 5%;
+                            z-index: -10;
+                        }
+                    }
+                
+                    .image-container:nth-child(2) {
+                        order: 1;
+                        padding:0 1rem;
+
+                        .text-on-image{
+                            left: 53px;
+                        }
+
+                        &:hover{
+                            transform: scale(1.3);
+                            .behind-border{
+                                position: absolute;
+                                border: 1px solid #E3B6B1;
+                                width: 90%;
+                                height: 100%;
+                                top: -15px;
+                                left: 10%;
+                                z-index: -10;
+                            }
+                        }
+
+                    }
+                    .image-container:nth-child(3) {
+                        order: 3;
+                        padding:0 1rem;
+
+                        .text-on-image{
+                            left: 115px;
+                        }
+
+                        &:hover{
+                            transform: scale(1.3);
+                            .behind-border{
+                                position: absolute;
+                                border: 1px solid #E3B6B1;
+                                width: 90%;
+                                height: 100%;
+                                top: -15px;
+                                left: 10% ;
+                                z-index: -10;
+                            }
+                        }
+                    }
+
+                    .image-container{
+                        width: fit-content;
+                        display: inline;
+
+                        .text-on-image{
+                            left: 40%;
+                            z-index: 100;
+                            color: #FAE9E7;
+
+                            .first-letter{
+                                color:rgba(185, 150, 146, 1) ;
+                            }
+                        }
+
+
+                    }
+                }    
+                
+            }
+        }
+
+
+    }
+
+    // Class Section
+    .class-section{
+        padding: 2rem 0;
+        background-color:#FAE9E7;
+        color: #725A58;
+        font-family:"Baskervville", serif;
+
+        @media screen and (min-width:900px) {
+            background-color:rgba(248, 246, 244, 1);
+        }
+
+        .class-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:#FAE9E7;
+
+            @media screen and (min-width:900px) {
+            margin: 0 4rem;
+            }
+
+            h2{
+                font-size: 60px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                margin: 3rem 0;
+
+                @media screen and (min-width:900px) {
+                    font-size: 80px;
+                    
+                }
+            }
+
+            .classes-card{
+                text-align: center;
+
+                @media screen and (min-width:900px) {
+                    display: grid;
+                    // width: 100%;
+                    grid-template-columns: 5fr 4fr;
+                    gap: 3rem;
+                    padding: 0 5rem 3rem 5rem;
+                    text-align: start;
+                    align-items: center;
+
+                    div{
+                        align-items: center;
+                    }
+                }
+
+                .classes-card-text{
+                    padding-top: 2rem;
+                    margin: 0 2.2rem;
+
+                    @media screen and (min-width:900px) {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .class-line{
+                        padding-bottom: 2rem;
+
+                        &:hover{
+                            background-color: rgba(185, 150, 146, 0.3);
+                        }
+
+                        @media screen and (min-width:900px) {
+                            display: flex; 
+                            align-items: center;
+                            padding:1.5rem 0.8rem;
+                            margin-bottom: 1re;
+                        }
+
+                        h4{
+                            font-size: 40px;
+                            font-weight: 400;
+                            margin: 1rem;
+                            padding: 0 1.2rem;
+                            text-align: center;
+
+                            @media screen and (min-width:900px) {
+                                font-size: 30px;
+                                margin: 0;
+                                padding: 0 0.7rem ;
+                            }
+
+                            &.class-professionnal::after{
+                                content: "Professional 1-day Makeup workshop";
+
+                                @media screen and (min-width:900px) {
+                                    content: "Professional 1-day Workshop";
+                                }
+                            }
+                        }
+
+                        .class-desc{
+                            line-height: 1.6;
+                            font-size: 18px;
+                            padding: 0.5rem 1rem;
+                            font-family:"Lato", sans-serif;
+
+                            @media screen and (min-width:900px) {
+                                padding: 0.8rem 0 0 0.5rem;
+                                line-height: normal;
+                                width: 90%;
+                            }
+                        }
+
+                        .class-btn{
+                            display:inline-flex;
+                            margin-top: 1rem;
+                            font-size: 22px;
+                            visibility: visible;
+
+                            @media screen and (min-width:900px) {
+                                .class-btn-text{
+                                    visibility: hidden;
+                                    font-size: 1px;
+                                }
+                                
+                            }
+                        }
+
+                        @media screen and (min-width:900px) {
+                            justify-content: space-between;;
+                            .class-title{
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                .view-all-btn{
+                    margin-top: 1rem;
+                    border: none;
+                    font-family:"Baskervville", serif;
+                    color: #725A58;
+                    font-size: 18px;
+                    background-color: transparent;
+                    padding: 1rem 6rem;
+                    border: 1px solid #725A58;
+
+                    &:hover{
+                        border: none;
+                        background-color: #B99692;
+                        color: #FBFAFA;
+                    }
+
+                    @media screen and (min-width:900px) {
+                        padding: 1rem 2rem;
+                        margin: 1rem;
+                    }
+                }
+
+                .classes-card-img{
+                    margin: 3rem 0;
+                    position: relative;
+
+                    @media screen and (min-width:900px){
+                        margin: 0;
+                        text-align: center;
+                    }
+                                        
+                    img{
+                        width: 100%;
+                        z-index: 0;
+                        
+                        @media screen and (min-width:900px) {
+                            width: 80%;
+                        }
+
+                    }
+                    .inner-border{
+                        position: absolute;
+                        z-index: 10;
+                        width: 90%;
+                        height: 90%;
+                        top: 30px;
+                        left: 25px;
+                        border: 1px solid #FBFAFA;
+
+                        @media screen and (min-width:900px) {
+                            top: 18px;
+                            left: 13.5%;
+                            width: 73%;
+                            height: 92%;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
