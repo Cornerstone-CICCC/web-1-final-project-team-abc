@@ -42,7 +42,7 @@
                         <a href="/about.html">About</a>
                     </li>
                     <li class="contact">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="instagram">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -77,7 +77,7 @@
                         <a href="/about.html">About</a>
                     </li>
                     <li class="contact">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <div class="icons">
                         <ul>
@@ -458,7 +458,7 @@
                         <h5 class="form-title">Event Date</h5>
                         <div class="date-selection">
                             <label for="event-date"></label>
-                            <input type="date" name="event-date" id="event-date" placeholder="Select Date" required>
+                            <input type="date" name="event-date" id="event-date" placeholder="Select Date">
                             <div class="not-decided-date">
                                 <input type="checkbox" name="not-decided-date" id="not-decided-date">
                                 <label for="not-decided-date"> <span class="checkmark"></span>Not decided</label>
@@ -495,14 +495,14 @@
                         
                     </div>
                     <div class="input-field" id="checked">
-                        <select name="country-code" class="country-code">
+                        <select name="country-code-call" class="country-code">
                             <option value="1">+1</option>
                             <option value="886">+886</option>
                             <option value="81">+81</option>
                         </select>
                         <label for="phone-number"></label>
                         <input type="tel" id="phone-number" 
-                        name="contact-info"
+                        name="contact-info-call"
                         placeholder="Your mobile number" autocomplete="off">
                     </div>
                     <div class="whatsapp-input">
@@ -511,14 +511,14 @@
                         
                     </div>
                     <div class="input-field">
-                        <select name="country-code" class="country-code">
+                        <select name="country-code-whatsapp" class="country-code">
                             <option value="1">+1</option>
                             <option value="886">+886</option>
                             <option value="81">+81</option>
                         </select>
                         <label for="whatsapp-number"></label>
                         <input type="tel" id="whatsapp-number"
-                        name="contact-info"
+                        name="contact-info-whatsapp"
                         placeholder="Your WhatsApp number" autocomplete="off">
                     </div>
                     <div class="sms-input">
@@ -527,14 +527,14 @@
                         
                     </div>
                     <div class="input-field">
-                        <select name="country-code" class="country-code">
+                        <select name="country-code-sms" class="country-code">
                             <option value="1">+1</option>
                             <option value="886">+886</option>
                             <option value="81">+81</option>
                         </select>
                         <label for="sms-number"></label>
                         <input type="tel" id="sms-number"
-                        name="contact-info"
+                        name="contact-info-sms"
                         placeholder="Your SMS number" autocomplete="off">
                     </div>
                     <div class="email-input-field">
@@ -545,7 +545,7 @@
                     <div class="input-field">
                         <label for="email-input"></label>
                         <input type="email" id="email-input" 
-                        name="contact-info"
+                        name="contact-info-email"
                         title="Only gmail accounts are allowed" pattern="^[a-zA-Z0-9_.+]+@gmail\.com$" placeholder="Your email address" autocomplete="off">
                     </div>
                 </div>
@@ -558,7 +558,6 @@
         <footer class="footer">
             <div class="footer-top">
             <img class="footer-logo" src="assets/images/logo.png" alt="Carla Beauty Logo" />
-            <h2 class="footer-title">Carla Beauty</h2>
             <p class="footer-subtitle">Expert Makeup and Hairstyle Studio</p>
             <div class="footer-icons">
                 <i class="fa-solid fa-phone"></i>
@@ -576,7 +575,7 @@
             <a href="#">Classes</a>
             <a href="#">Beauty Tips</a>
             <a href="/about.html">About</a>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
             </nav>
 
             <hr class="divider">

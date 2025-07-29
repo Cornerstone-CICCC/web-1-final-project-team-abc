@@ -54,7 +54,7 @@ form.addEventListener("submit", function (event) {
     Time Undecided: ${formData.get("not-decided-time") ? "Yes" : "No"}
 
     Name: ${formData.get("name")}
-    Contact Info: ${formData.get("contact-info")}
+    Contact Info: ${(formData.get("country-code-call") || formData.get("country-code-whatsapp") || formData.get("country-code-sms")) && (formData.get("contact-info-call") || formData.get("contact-info-whatsapp") || formData.get("contact-info-sms") || formData.get("contact-info-email"))}
     Preferred Contact Method: ${formData.get("contact-method")}
   `;
 

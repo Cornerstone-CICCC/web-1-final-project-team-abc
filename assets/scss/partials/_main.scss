@@ -1,4 +1,4 @@
-#services{
+#services {
     background-color: rgba(248, 246, 244, 1);
 }
 
@@ -49,6 +49,7 @@
         .first-image {
             flex-basis: 320px;
             flex: 1;
+            align-self: center;
         }
 
         .description {
@@ -123,6 +124,8 @@
         .second-image {
             flex-basis: 320px;
             flex: 1;
+            align-self: center;
+
         }
 
         .description {
@@ -194,6 +197,8 @@
         .third-image {
             flex-basis: 320px;
             flex: 1;
+            align-self: center;
+
         }
 
         .description {

@@ -4,20 +4,22 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-.portfolio-page{
+.portfolio-page {
   background-color: rgba(248, 246, 244, 1);
 }
 
 
 .frame {
   background-color: variables.$light-pink;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 6rem 1rem;
+
 
   .portfolio {
     max-width: 1200px;
@@ -38,15 +40,15 @@ html, body {
         .tab {
           cursor: pointer;
           font-size: 1.5rem;
-          font-family: variables.$font-main;
-          color: #aaa;
+          font-family: 'Baskervville', serif;
+          color: #888888;
+          font-weight: 400;
           position: relative;
           padding-bottom: 0.5rem;
           transition: all 0.3s ease;
 
           &.active {
-            color: #3e3e3e;
-            font-weight: bold;
+            color: #191919;
 
             &::after {
               content: '';
@@ -72,7 +74,7 @@ html, body {
         display: none;
       }
 
-      
+
 
       img {
         width: 100%;
@@ -93,35 +95,35 @@ html, body {
       z-index: 999;
       cursor: pointer;
       transition: all 0.3s ease;
-    
+
       i {
         color: #fff;
         font-size: 1.5rem;
       }
-    
+
       &:hover {
         background-color: #c5a6a2;
       }
     }
-    
+
     .cta-button {
       display: block;
       margin: 2rem auto 0;
       padding: 0.75rem 2rem;
       background-color: transparent;
-      border: 1px solid #755c56; 
+      border: 1px solid #755c56;
       color: #755c56;
-      font-family: 'Playfair Display', serif; 
+      font-family: 'Baskervville', serif;
       font-size: 1.2rem;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
-    
+
       &:hover {
         background-color: #f5e5e2;
       }
     }
-    
+
   }
 }
 
@@ -147,7 +149,7 @@ html, body {
   }
 
   .text-wrapper {
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Loto', sans-serif;
     font-size: 1.2rem;
     color: #3e3e3e;
     max-width: 600px;
@@ -157,7 +159,7 @@ html, body {
 
 @media (max-width: 768px) {
   .frame {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
 
     .portfolio {
       .portfolio-nav {
@@ -176,7 +178,7 @@ html, body {
 
       .gallery {
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 1.2rem;
 
         img {
@@ -212,5 +214,3 @@ html, body {
     }
   }
 }
-
-  
